@@ -1,0 +1,52 @@
+<ion-content id="category"  cache-view="false">
+    <header id="header">
+      <div class="header-left"(click)="goBack();">
+        <span></span>
+      </div>
+
+      <!--<a class="header-center" ng-href="#/search">-->
+      <a class="header-center" ng-href="#/search">
+        <span></span>
+      </a>
+      <div class="header-right">
+        <span></span>
+      </div>
+    </header>
+    <nav id="nav">
+      <ul>
+        <li *ngFor="let item of categoryData, let i = index" (click)="categoryLeftClick(i);getCategoryDetailData(item.typeNumber);">
+          <span [ngClass]="{true:'nav-current',false:'nav-blur'}[item.isSelect]" style="font-size: 11px">{{item.name}}</span>
+        </li>
+      </ul>
+    </nav>
+    <div id="pro">
+      <div class="pro-scroll">
+        <div class="pro-warp">
+          <div class="banner">
+            <img src="assets/img/banner_1.jpg" alt=""/>
+          </div>
+          <div class="content">
+            <div class="content-title">
+              <span>热卖品类</span>
+            </div>
+            <div class="content-body">
+              <!--<li class="content-body-list" *ngFor="item in categoryDetailData" ui-sref="goodsList({typeNumber:1})">-->
+              <li class="content-body-list" *ngFor="let item of categoryDetailData, let i = index" (click)="startPage(i);" >
+                <img [defaultImage]="assets/img/common/common_default"  [lazyLoad]="item.src" />
+                <span>{{item.name}}</span>
+              </li>
+            </div>
+            <div class="content-title">
+              <span>冬季新品</span>
+            </div>
+            <div class="content-body">
+              <li class="content-body-list" *ngFor="let item of categoryDetailData, let i = index">
+                <img [defaultImage]="assets/img/common/common_default"  [lazyLoad]="item.src" />
+                <span>{{item.name}}</span>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</ion-content>

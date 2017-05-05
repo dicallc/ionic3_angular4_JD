@@ -1,0 +1,13 @@
+page-learn-tab-page {
+  .tabs-md .tab-button {
+    min-height: 5rem;
+  }
+
+  .tab-button-icon {
+    color: rgba(103, 103, 103, 0.7) !important;
+  }
+
+  .tab-button[aria-selected=true] .tab-button-icon {
+    color: #387ef5 !important;
+  }
+}

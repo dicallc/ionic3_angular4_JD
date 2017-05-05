@@ -1,0 +1,66 @@
+<ion-content id="goodsList" cache-view="false">
+  <header id="header">
+    <div class="header-left" (click)="goBack();">
+      <span></span>
+    </div>
+    <div class="header-center">
+      <span></span>
+    </div>
+    <div class="header-right">
+      <span></span>
+    </div>
+  </header>
+  <!-- 筛选导航部分 -->
+  <nav id="nav">
+    <div class="nav-all">综合</div>
+    <div class="nav-warp">
+      <ul>
+        <li>11.11</li>
+        <li>销量</li>
+        <li>价格</li>
+        <li>品牌</li>
+        <li>新品</li>
+        <li>服务</li>
+      </ul>
+    </div>
+  </nav>
+  <ion-content >
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content
+        pullingIcon="arrow-dropdown"
+        pullingText="获取最新数据..."
+        refreshingSpinner="circles"
+        refreshingText="刷新完毕">
+
+
+
+      </ion-refresher-content>
+    </ion-refresher>
+    <div class="pro" *ngFor="let item of obj_goodsListData, let i = index" (click)="startPage(i);" >
+    <div class="pro-warp">
+    <div class="pro-body">
+    <div class="pro-body-des">
+    <!--<a ng-href="#/details/{{item.productId}}">-->
+    <a >
+    <img src="{{item.img}}" alt="">
+    </a>
+    <div class="pro-body-des-text">
+    <span>{{item.name}}</span>
+    <b>￥{{item.price}}</b>
+    <div class="pro-body-des-con">
+    <span>{{item.haoping}}%好评</span>
+    <span>{{item.buy}}人</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+      <ion-infinite-scroll-content
+        loadingSpinner="bubbles"
+        loadingText="Loading more data...">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  </ion-content>
+</ion-content>

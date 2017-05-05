@@ -1,0 +1,300 @@
+page-good-detail-page {
+  #details input[type=radio]{
+    height: 0;
+    width: 0;
+  }
+  #details input[type=text]{
+    padding: 0;
+    margin-left: 10px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+  }
+
+  #details .clearBoth{
+    clear: both;
+  }
+  #details .floatLeft{
+    float: left;
+  }
+  #details .chicun div span{
+    width: 30px;
+    text-align: center;
+  }
+  #details .shuliang div{
+    margin-left: 7px;
+  }
+  #details ion-content{
+    overflow: scroll;
+    background-color: #efeff4;
+    padding-bottom: 60px;
+  }
+
+  #details  i.badge {
+    position: absolute;
+    top: 5px;
+  }
+
+  #details div,ul,li,h1,h2,h3,img,a{
+    font-family:'PingHei';
+    font-size:16px;
+    padding:0;
+    margin:0;
+    border:0;
+    list-style:none;
+    color:#666;
+    font-weight:300;
+  }
+  #details a,span{
+    display:block;
+    text-decoration:none;
+  }
+  #details body{
+    background-color:#f5f5f5;
+  }
+  #details #header{
+    display:block;
+    background-color: #333;
+    background-image:url('../assets/img/headerbg.png');
+    background-size:100% 44px;
+    width:100%;
+    height:44px;
+    overflow:hidden;
+  }
+  #details .header-left{
+    width:40px;
+    height:44px;
+    position:absolute;
+  }
+  #details .header-left span{
+    width:20px;
+    height:20px;
+    margin:12px 0 0 10px;
+    background-size:200px 200px;
+    background-position:-20px 0;
+    background-image:url('../assets/img/sprites.png');
+  }
+  #details .header-center{
+    height:44px;
+    position:absolute;
+    left:40px;
+    right:40px;
+  }
+  #details .header-center span{
+    width:96%;
+    height:30px;
+    color:#252525;
+    text-align:center;
+    line-height:44px;
+    font-size:15px;
+    font-family:'PingHei';
+  }
+  #details .header-right{
+    width:40px;
+    height:44px;
+    position:absolute;
+    right:0;
+  }
+  #details .header-right span{
+    width:20px;
+    height:20px;
+    margin:12px 0 0 10px;
+    background-size:200px 200px;
+    background-position:-60px 0;
+    background-image:url('../assets/img/sprites.png');
+  }
+  #details #view{
+    width:100%;
+    height:320px;
+    border-bottom:1px solid #dfdfdf;
+
+  }
+  #details .viewWarp{
+    width:320px;
+    height:320px;
+    margin:0 auto;
+    overflow:hidden;
+    position:relative;
+  }
+  #details .viewWarp img{
+    width:320px;
+    height:320px;
+  }
+  #details .viewText{
+    position:absolute;
+    bottom:5px;
+    right:5px;
+    background-color:rgba(0,0,0,.3);
+    width:50px;
+    height:50px;
+    text-align:center;
+    color:#fff;
+    line-height:50px;
+    border-radius:25px;
+    font-weight:500;
+  }
+  #details .viewText span{
+    display:inline-block;
+    font-size:20px;
+  }
+  #details #des{
+    margin:15px 10px;
+  }
+  #details #des .desText{
+    color:#000;
+  }
+  #details #des .desNumber{
+    margin-top:10px;
+    color:#F15353;
+    font-weight:700;
+    font-size:22px;
+    font-family:'微软雅黑';
+  }
+  #details #list{
+    width:100%;
+    height:150px;
+    border-top:1px solid #dfdfdf;
+    padding:10px 0 0 0;
+
+  }
+  #details #list span{
+    display:inline-block;
+    color:#777;
+    margin-bottom:10px;
+  }
+  #details #list div{
+    color:#000;
+  }
+  #details .listBox{
+    padding:3px 5px;
+    border:1px solid #696969;
+    color:#696969;
+    border-radius:3px;
+  }
+  #details .listCurrent.listBox{
+    border:1px solid #f15353;
+    color:#f15353;
+  }
+  #details .shuliang span{
+    display:block;
+    float:left;
+  }
+  #details .listLeft{
+    margin-left:15px;
+    padding:3px 10px;
+    border:1px solid #696969;
+    color:#696969;
+    border-radius:3px 0 0 3px;
+  }
+  #details .listNum{
+    padding:3px 20px;
+    border:1px solid #696969;
+    color:#696969;
+  }
+  #details .listRight{
+    padding:3px 10px;
+    border:1px solid #696969;
+    color:#696969;
+    border-radius:0px 3px 3px 0px;
+  }
+  #details #buy{
+    width:100%;
+    height:50px;
+    position:fixed;
+    bottom:0;
+  }
+  #details .buyLeft{
+    float:left;
+    width:40%;
+    height:50px;
+    background-color:rgba(0,0,0,.5);
+  }
+  #details .buyCenter{
+    float:left;
+    width:30%;
+    height:50px;
+    background-color:#ffb03f;
+    color:#fff;
+    text-align:center;
+    line-height:50px;
+    font-weight:500;
+    font-family:'微软雅黑';
+  }
+  #details .buyRight{
+    float:left;
+    width:30%;
+    height:50px;
+    background-color:#f15353;
+    color:#fff;
+    text-align:center;
+    line-height:50px;
+    font-weight:500;
+    font-family:'微软雅黑';
+  }
+  #details .buyLeft strong{
+    font-size:14px;
+    color:#fff;
+    font-weight:300;
+  }
+  #details .guanzhu{
+    width:50%;
+    height:50px;
+    text-align:center;
+    float:left;
+  }
+  #details .gouwuche{
+    width:50%;
+    height:50px;
+    text-align:center;
+    float:left;
+  }
+  #details .guanzhu span{
+    width:20px;
+    height:20px;
+    background-image:url('../assets/img/focus-icon.png');
+    background-size:100px 100px;
+    margin:10px auto 0;
+  }
+  #details .gouwuche span{
+    width:27px;
+    height:20px;
+    background-image:url('../assets/img/sprits_btm_new.png');
+    background-position:0 -23px;
+    background-size:50px 50px;
+    margin:10px auto 0;
+  }
+
+  #details #list span{
+    font-size: 14px;
+    color: #848689;
+    margin-left: 8px;
+    font-family: 'microsoft yahei',Verdana,Arial,Helvetica,sans-serif;
+  }
+
+  #details #otherInfo{
+    display: inline-block;
+    font-family: 'microsoft yahei',Verdana,Arial,Helvetica,sans-serif;
+  }
+
+  #details #otherInfo span,p{
+    display: inline-block;
+  }
+
+  #details #otherInfo span{
+    font-size: 14px;
+    color: #848689;
+    float: left;
+    margin-left: 8px;
+    width: 10%;
+  }
+
+  #details #otherInfo p{
+    font-size: 14px;
+    color: #000;
+    padding-right: 5px;
+    width: 80%;
+  }
+
+
+
+}

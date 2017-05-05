@@ -1,0 +1,165 @@
+page-tab-discover-page {
+  #category{
+    background-image: none;
+    background-color: #fff;
+  }
+  #category .has-header{
+    top: 0;
+  }
+
+  #category div,ul,li,h1,h2,h3,img,a{
+    font-family:'微软雅黑';
+    font-size:16px;
+    padding:0;
+    margin:0;
+    border:0;
+    list-style:none;
+    color:#666;
+    font-weight:300;
+  }
+
+  #category a,span{
+    display:block;
+    text-decoration:none;
+  }
+
+  #category body{
+    overflow:hidden;
+  }
+  #category #header{
+    display:block;
+    background-color: #333;
+    background-image:url('../assets/img/headerbg.png');
+    background-size:100% 44px;
+    width:100%;
+    height:44px;
+    overflow:hidden;
+  }
+  #category .header-left{
+    width:40px;
+    height:44px;
+    position:absolute;
+  }
+  #category .header-left span{
+    width:20px;
+    height:20px;
+    margin:12px 0 0 10px;
+    background-size:200px 200px;
+    background-position:-20px 0;
+    background-image:url('../assets/img/sprites.png');
+  }
+  #category .header-center{
+    height:44px;
+    position:absolute;
+    left:40px;
+    right:40px;
+  }
+  #category .header-center span{
+    width:96%;
+    height:30px;
+    margin:6px 2%;
+    background-color:#fff;
+    border:2px solid #dfdfdf;
+    border-radius: 5px;
+  }
+  #category .header-right{
+    width:40px;
+    height:44px;
+    position:absolute;
+    right:0;
+  }
+  #category .header-right span{
+    width:20px;
+    height:20px;
+    margin:12px 0 0 10px;
+    background-size:200px 200px;
+    background-image:url('../assets/img/sprites.png');
+  }
+  #category #nav{
+    position:absolute;
+    top:45px;
+    bottom:0;
+    width:90px;
+    overflow:hidden;
+  }
+  #category #nav ul{
+    display:block;
+    width:100px;
+    height:100%;
+    overflow-x:hidden;
+    overflow-y:scroll;
+  }
+  #category #nav ul li{
+    border-bottom:1px solid #e0e0e0;
+    text-align:center;
+    line-height:50px;
+    width:89px;
+    height:49px;
+    font-size:12px;
+  }
+  #category #nav .nav-blur{
+    color:#252525;
+    border-right:1px solid #e0e0e0;
+    background-color:#f3f4f6;
+  }
+  #category #nav .nav-current{
+    color:red;
+    border-right:1px solid #fff;
+    background-color:#fff;
+  }
+  #category #pro{
+    position:absolute;
+    left:90px;
+    top:45px;
+    right:0;
+    bottom:0;
+    overflow:hidden;
+  }
+  #category .pro-scroll{
+    width:200%;
+    height:100%;
+    overflow-y:scroll;
+  }
+  #category .pro-warp{
+    width:50%;
+    background-color: #fff;
+  }
+  #category #pro .banner{
+    margin:10px 12px;
+    height: 94px;
+  }
+  #category #pro img{
+    width:100%;
+    height: 100%;
+  }
+  #category #pro .content{
+    overflow:hidden;
+  }
+  #category #pro .content-title{
+    margin-top:15px;
+    font-size:12px;
+    font-weight:700;
+    padding-left:10px;
+    font-family:'宋体';
+  }
+  #category #pro .content-body{
+    margin:0px 12px;
+    overflow:hidden;
+  }
+  #category #pro .content-body-list{
+    width:33%;
+    height: 90px;
+    margin-top:10px;
+    float:left;
+  }
+  #category #pro .content-body-list img{
+    width:100%;
+    height: 70%;
+  }
+  #category #pro .content-body-list span{
+    font-size:14px;
+    text-align:center;
+    font-family:'宋体';
+  }
+
+}

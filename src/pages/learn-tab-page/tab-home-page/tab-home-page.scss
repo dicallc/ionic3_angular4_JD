@@ -1,0 +1,358 @@
+page-tab-home-page {
+  .swiper-container {
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    .swiper-slide {
+    }
+    .swiper-img {
+      min-height: 100%;
+      width: 100%;
+      height: auto;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+  }
+  .swiper-container2 {
+    width: 100%;
+    height: 140px;
+    margin: 7px auto;
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      padding: 4px;
+      img {
+        width: 120px;
+        height: 100px;
+      }
+      p {
+        margin: 0 !important;
+        color: #636363;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+
+
+  #home ion-content{
+    overflow:scroll;
+  }
+
+  /*头部搜索栏*/
+  #home .headerBar {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+  }
+
+  #home #headerBar-bg{
+    background-color: #c91523;
+    opacity: 0;
+    height: 35px;
+    position: absolute;
+    width: 100%;
+  }
+
+  #home .headerBar-logo {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 56px;
+    height: 35px;
+    display: inline-block;
+  }
+
+  #home .headerBar-logo i {
+    display: inline-block;
+    height:21px;
+    width: 56px;
+    background: url('../assets/img/sprites.png') no-repeat;
+    background-position: 0 -109px;
+    background-size: 200px 200px;
+    margin-left: 7px;
+    margin-top: 7px;
+  }
+
+  #home .headerBar-search {
+    position:absolute;
+    left: 66px;
+    right: 40px;
+    width: auto;
+    height: 25px;
+    margin-top: 5px;
+    color: #ffffff;
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 15px;
+  }
+
+  #home .headerBar-search span{
+    display: inline-block;
+    height:20px;
+    width: 20px;
+    background: url('../assets/img/sprites.png') no-repeat;
+    background-position: -60px -109px;
+    background-size: 200px 200px;
+    margin-left: 5px;
+    margin-top: 3px;
+  }
+
+  #home .headerBar-search div{
+    display:inline-block;
+    height:100%;
+    width: auto;
+  }
+  #home .headerBar-search div input{
+    border: 0;
+    display: inline-block;
+    background: 0;
+    font-size: 13px;
+    line-height: 1.2em;
+    height: 1.4em;
+    width: 100%;
+    vertical-align: middle;
+    margin-top: -15px;
+    color: #989191;
+  }
+
+  #home .headerBar-login {
+    width: 30px;
+    height:inherit;
+    position: absolute;
+    right: 7px;
+    display: inline-block;
+  }
+
+  #home .headerBar-login span{
+    margin-top: 7px;
+    color:#ffffff;
+    font-size: 15px;
+    display: inline-block;
+  }
+
+
+
+  /*功能导航*/
+  #home #nav{
+    height:160px;
+    width:100%;
+    padding:0 3%;
+    background-color:#fff;
+    overflow:hidden;
+    box-shadow:0 1px 1px #ebebeb;
+  }
+  #home #nav span{
+    display:block;
+    float:left;
+    width:25%;
+    height:60px;
+    margin-top:16px;
+  }
+  #home #nav span img{
+    display:block;
+    width:40px;
+    height:40px;
+    margin:0px auto;
+  }
+  #home #nav span h2{
+    font-size:14px;
+    font-weight:300;
+    text-align:center;
+    margin-top: 10px;
+  }
+
+  /*京东头条*/
+  #home .toutiao {
+    margin-top: 10px;
+    position: relative;
+    height: 42px;
+    width: 100%;
+    background-color: white;
+    align-items:center;
+    display:-webkit-flex;
+    padding-left: 5px;
+    padding-right: 5px;
+
+  }
+
+  #home .toutiao img {
+    float: left;
+    height: 28px;
+    width: 25%;
+    display: inline-block;
+  }
+
+  #home .toutiao #toutiaoSlider {
+    width: 75%;
+    float: left;
+    margin-top: -2px;
+    padding-left: 10px;
+    align-items:center;
+    display:-webkit-flex;
+    height: 100%;
+  }
+
+  /*秒杀*/
+  #home #centent{
+    margin:10px 5px;
+    background-color:#fff;
+    box-shadow:0 1px 1px #dcdcdc;
+  }
+  #home .centent-top{
+    height:32px;
+    overflow:hidden;
+  }
+  #home .centent-top span{
+    display:block;
+    width:16px;
+    height:20px;
+    margin:4px 4px 0 4px;
+    background-image:url('../assets/img/seckill-icon.png');
+    background-size:16px 20px;
+    float:left;
+  }
+  #home .centent-top h2{
+    float:left;
+    font-size:15px;
+    color:#f00;
+    line-height:30px;
+    margin-right:10px;
+    margin-top: 0px;
+  }
+  #home .centent-time span{
+    background-image:none;
+    margin:5px 1px;
+    width:5px;
+    color:#5d5d5d;
+    font-size:14px;
+    font-weight:700;
+    text-align:center;
+  }
+  #home .centent-top .time-text{
+    color:#fff;
+    font-size:16px;
+    width:15px;
+    font-weight:300;
+    background-color:#5d5d5d;
+  }
+  #home .centent-more{
+    float:right;
+    line-height:30px;
+    margin-right:5px;
+    font-size:14px;
+  }
+  #home .centent-bottom{
+    padding-top:7px;
+    overflow:hidden;
+  }
+  #home .centent-bottom li{
+    width:33.3%;
+    float:left;
+  }
+
+  #home .centent-bottom li img{
+    display:block;
+    border-right:1px solid #e6e6e6;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    width: 100%;
+  }
+  #home .centent-bottom li span{
+    display:block;
+    text-align:center;
+    font-size:14px;
+  }
+  #home .seckill-now{
+    color:#f15353;
+  }
+  #home .seckill-old{
+    text-decoration:line-through;
+  }
+  /*广告*/
+  #home .ad ion-slide {
+
+  }
+
+  #home .ad ion-slide img {
+    height: 15%;
+    width: 100%;
+  }
+
+  /*商品展示*/
+  #home .floor{
+    margin:0 5px 5px;
+    background-color:#fff;
+    box-shadow:0 1px 1px #dcdcdc;
+    overflow:hidden;
+  }
+  #home .floor-title{
+    font-size:15px;
+    padding-top:8px;
+    padding-left:7px;
+    padding-bottom:5px;
+  }
+  #home .floor-title:before{
+    display:inline-block;
+    content:'';
+    width:3px;
+    height:12px;
+    background-color:#d8505c;
+    margin:1px 7px 0 0;
+  }
+  #home .floor-product{
+    width:100%;
+  }
+  #home .floor-product-list{
+    width:50%;
+    overflow:hidden;
+    float:left;
+  }
+  #home .floor-product-list img{
+    width:100%;
+    display:block;
+    border-top:1px solid #eee;
+  }
+  #home .floor-left{
+    border-right:1px solid #eee;
+    margin-left:-1px;
+  }
+
+  /*回到头部滚动条*/
+  #home .back_top{
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    bottom: 55px;
+    right: 10px;
+    background: url('../assets/img/scroll-to-top-icon.png') no-repeat;
+    background-size: 35px 35px;
+    opacity: 1;
+    transition: all .3s ease 0s;
+    -webkit-transition: all .3s ease 0s;
+    z-index: 100;
+  }
+
+}

@@ -1,2 +1,70 @@
-# ionic3_angular4_JD
-模仿京东商城的demo
+## ionic3_angular4_JD ##
+
+### 使用 ###
+#####1.cnpm install或者使用npm install
+
+##### 2.ionic serve  ####
+
+
+##### 3有需要使用android/ios平台 ####
+
+
+       ionic platform add ios/android
+
+
+
+##### 4.预览界面 ####
+
+----------
+
+<img src="/gif/GIF.gif"  alt="上海鲜花港 - 郁金香" />
+
+
+
+
+----------
+### 再次记录从NG1-4一下坑吧 ###
+
+##### 1.scss的图片地址应该怎么写 ####
+
+    background-image:url('../assets/img/sprites.png');
+##### 2.懒加载 ####
+懒加载问题，我看到ionic有组件支持，但是不是很完善，可以使用下面的库
+
+[点击打开](https://github.com/tjoskar/ng-lazyload-image)
+
+##### 3.请求网络 ####
+这个是最纠结的，第一个ES6，rxjs不熟悉，看到了很多例子，都不是很懂，其中使用箭头函数还遇到一些坑
+有一个简单的例子 [点击打开](https://www.djamware.com/post/58e657b680aca764ec903c2d/ionic-3-and-angular-4-mobile-app-example)
+
+当然我在项目中用到了代码：**GoodsService.ts** 使用：**good-lists-page.ts**
+
+##### 4.全局常量 ####
+
+全局常量的编写是有意义的比如图片地址，URL等
+
+<code>
+<pre>
+export const APP_SERVE_URL = 'http://88.128.18.193:8080/';
+
+export const FILE_SERVE_URL = 'http://88.128.18.144:3333/';
+
+ export const APP_SERVE_URL = 'http://localhost:8100';
+
+export const FILE_SERVE_URL = 'http://localhost:8100/kit_file_server';
+</pre>
+</code>
+
+#### 更多详细的看下面的思维导图吧，是自己做的笔记 更详细内容在gif文件中的思维导图 ####
+
+<img src="/gif/daotu.png"  alt="上海鲜花港 - 郁金香" />
+
+### 结语： ###
+1.耗时两周自学angular4和ionic3，其实很多东西不一样了，还好有SS，自从学了前端，一直在墙外看资料，看了很多人记录的帖子，觉得应该回报一下开源了。
+
+
+第三方js：
+使用typings 添加**swipe**r(幻灯片)，**ng-lazyload-image**(懒加载)，**jquery**(快捷开发)
+
+<br>
+#### 最后，如果这个项目能帮到你，动动你的鼠标点一下start呗 ####

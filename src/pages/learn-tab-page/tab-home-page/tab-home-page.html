@@ -1,0 +1,172 @@
+
+<ion-content id="home">
+  <div>
+    <!--头部搜索栏-->
+    <div id="headerBar" class="headerBar">
+      <div  #headBgColor id="headerBar-bg"></div>
+      <div  class="headerBar-logo">
+        <i></i>
+      </div>
+      <a class="headerBar-search" (click)="startPage('search')">
+        <span></span>
+        <div>
+          <input  maxlength="20" autocomplete="true" value="美妆1元起 独家放价"/>
+        </div>
+      </a>
+      <a class="headerBar-login" (click)="startPage('login')">
+        <span>
+            登录
+        </span>
+      </a>
+    </div>
+  </div>
+  <div #lyScroll id="home-content" class="scroll-content" scroll="false">
+    <!--头部滚动条-->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let item of headerSlideData">
+          <img  class="swiper-img" alt="{{item.alt}}" src="{{item.src}}">
+        </div>
+      </div>
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- 功能导航 -->
+    <nav id="nav">
+      <span ui-sref="indexTab.category">
+        <img src="assets/img/nav0.png" alt="">
+        <h2>分类查询</h2>
+      </span>
+      <span>
+        <img src="assets/img/nav1.png" alt="">
+        <h2>物流查询</h2>
+      </span>
+      <span>
+        <img src="assets/img//nav2.png" alt="">
+        <h2>购物车</h2>
+      </span>
+      <span>
+        <img src="assets/img/nav3.png" alt="">
+        <h2>我的京东</h2>
+      </span>
+      <span>
+        <img src="assets/img/nav4.png" alt="">
+        <h2>充值</h2>
+      </span>
+      <span>
+        <img src="assets/img/nav5.png" alt="">
+        <h2>领券中心</h2>
+      </span>
+      <span>
+        <img src="assets/img/nav6.png" alt="">
+        <h2>生活团购</h2>
+      </span>
+      <span>
+        <img src="assets/img/nav7.png" alt="">
+        <h2>我的关注</h2>
+      </span>
+    </nav>
+
+    <!--头条-->
+    <div class="toutiao">
+      <img src="assets/img/home-toutiao.jpg">
+        <div id="toutiaoSlider">
+
+          兰博丹尼 可爱零钱包 5555
+        </div>
+      <!--<div id="toutiaoSlider" class="swiper-container">-->
+        <!--<div class="swiper-wrapper">-->
+          <!--<div class="swiper-slide">兰博丹尼 可爱零钱包 5555</div>-->
+          <!--<div class="swiper-slide">桂格即食燕麦片超值装1478g</div>-->
+          <!--<div class="swiper-slide">维达 卫生纸 140g卷纸*10卷</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    </div>
+
+    <!--广告1-->
+
+    <!-- 秒杀 -->
+    <div id="centent">
+      <div class="centent-top">
+        <span></span>
+        <h2>掌上秒杀</h2>
+        <div class="centent-time">
+          <span class="time-text">0</span>
+          <span class="time-text">0</span>
+          <span>:</span>
+          <span class="time-text">0</span>
+          <span class="time-text">0</span>
+          <span>:</span>
+          <span class="time-text">0</span>
+          <span class="time-text">0</span>
+        </div>
+        <div class="centent-more">
+          更多>
+        </div>
+      </div>
+      <ul class="centent-bottom">
+        <li>
+          <img src="assets/img/seckill_1.jpg" alt="">
+          <span class="seckill-now">￥11.11</span>
+          <span class="seckill-old">￥39.00</span>
+        </li>
+        <li>
+          <img src="assets/img/seckill_1.jpg" alt="">
+          <span class="seckill-now">￥69.00</span>
+          <span class="seckill-old">￥299.00</span>
+        </li>
+        <li>
+          <img src="assets/img/seckill_1.jpg" alt="">
+          <span class="seckill-now">￥99.00</span>
+          <span class="seckill-old">￥199.00</span>
+        </li>
+      </ul>
+    </div>
+
+    <!--主题街-->
+    <div class="floor">
+    <div class="floor-title">主题街</div>
+    <div class="floor-product">
+      <div class="floor-product-list floor-left">
+        <img src="assets/img/home-theme-3.jpg" alt="">
+      </div>
+      <div class="floor-product-list">
+        <img src="assets/img/home-theme-1.jpg" alt="">
+        <img src="assets/img/home-theme-2.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+    <!--广告2-->
+    <div class="ad" style="clear: both">
+      <ion-slides pager="true" autoplay="3000" loop="true">
+        <ion-slide>
+          <img src="assets/img/home-ad-4.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/img/home-ad-5.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/img/home-ad-6.jpg">
+        </ion-slide>
+      </ion-slides>
+    </div>
+    <!-- 产品展示 -->
+    <div id="floor-1" class="floor">
+      <div class="floor-title">超值购</div>
+      <div class="floor-product">
+        <div class="floor-product-list floor-left">
+          <img src="assets/img/cp1.jpg" alt="">
+        </div>
+        <div class="floor-product-list">
+          <img src="assets/img/cp2.jpg" alt="">
+          <img src="assets/img/cp3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!--回到顶部的区块-->
+    <div #btnBackTop class="back_top"></div>
+  </div>
+</ion-content>

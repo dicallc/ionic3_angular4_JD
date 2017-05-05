@@ -1,0 +1,100 @@
+
+
+<ion-content id="details" cache-view="false">
+  <ion-content >
+  <!-- 头部 -->
+  <header id="header">
+    <div class="header-left">
+      <div (click)="goBack();">
+        <span></span>
+      </div>
+    </div>
+    <div class="header-center">
+      <span>商品详情</span>
+    </div>
+    <div class="header-right">
+      <span></span>
+    </div>
+  </header>
+  <!-- 产品展示图 -->
+  <div id="view">
+    <div class="viewWarp">
+      <ul>
+        <li>
+          <img src="assets/img/details/detail01.jpg" alt="">
+        </li>
+      </ul>
+      <div class="viewText"><span>1</span>/6</div>
+    </div>
+  </div>
+    <!-- 产品选项 -->
+    <div id="des">
+      <div class="desText">若昕 韩版睡衣女冬法兰绒家居服加厚珊瑚绒女人卡通甜美睡衣秋冬套装 66651K 女 M  </div>
+      <div class="desNumber">¥115.00</div>
+    </div>
+    <div id="list">
+      <div class="yixuan">
+        <span>已选</span>
+        66651k女 m 1件
+      </div>
+      <div class="yanse clearBoth">
+        <span class="floatLeft">颜色</span>
+        <div class="floatLeft"  *ngFor="let item of obj_goodsInfo.colorGroup, let i = index" >
+          <input id="colorRadio{{i}}" type="radio" name="color" value="{{item.value}}"  ng-checked="$index==0?true:false" ng-init="$index==0?obj_goodsDetailInfo.color=item.value:''" ng-model="obj_goodsDetailInfo.color">
+          <span ng-class="obj_goodsDetailInfo.color==item.value?'listCurrent':''" class="listBox"><label for="colorRadio{{i}}">{{item.name}}</label></span>
+        </div>
+      </div>
+      <div class="chicun clearBoth">
+        <span class="floatLeft">尺寸</span>
+        <div class="floatLeft"  *ngFor="let item of obj_goodsInfo.sizeGroup, let i = index" >
+          <input id="sizeRadio{{$index}}" type="radio" name="size" value="{{item.value}}"  ng-checked="$index==0?true:false" ng-init="$index==0?obj_goodsDetailInfo.size=item.value:''" ng-model="obj_goodsDetailInfo.size">
+          <span ng-class="obj_goodsDetailInfo.size==item.value?'listCurrent':''" class="listBox"><label for="sizeRadio{{$index}}">{{item.name}}</label></span>
+        </div>
+      </div>
+      <div class="shuliang clearBoth">
+        <span class="floatLeft">数量</span>
+        <div class="floatLeft">
+          <span class="listLeft floatLeft" (click)="jian1();" >-</span>
+          <input class="floatLeft" type="text" readonly ng-model="obj_goodsDetailInfo.number">
+          <span class="listRight floatLeft" (click)="jia1();" >+</span>
+        </div>
+
+      </div>
+    </div>
+    <div id="otherInfo">
+      <div class="songzhi">
+        <span>送至</span>
+        <p>北京</p>
+      </div>
+      <div class="yunfei">
+        <span>运费</span>
+        <p>店铺单笔订单不满89元，货到付款运费10元，在线支付运费10元</p>
+      </div>
+      <div class="fuwu">
+        <span>服务</span>
+        <p>由澳贝琳官方旗舰店从广东广州市发货并提供售后服务</p>
+      </div>
+      <div class="tishi">
+        <span>提示</span>
+        <p>该商品支持七天无理由退货</p>
+      </div>
+    </div>
+  </ion-content>
+
+  <!-- 固定底边栏 -->
+  <div id="buy">
+    <div class="buyLeft">
+      <div class="guanzhu">
+        <span></span>
+        <strong>关注</strong>
+      </div>
+      <div class="gouwuche" ui-sref="cart">
+        <span></span>
+        <i id="badge" class="badge badge-assertive">{{obj_cartCount.count}}</i>
+        <strong>购物车</strong>
+      </div>
+    </div>
+    <div class="buyCenter" ng-click="func_addToCart()">加入购物车</div>
+    <div class="buyRight" ng-click="func_goHome()">立即购买</div>
+  </div>
+</ion-content>

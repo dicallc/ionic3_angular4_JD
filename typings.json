@@ -1,0 +1,6 @@
+{
+  "globalDependencies": {
+    "jquery": "registry:dt/jquery#1.10.0+20170310222111",
+    "swiper": "registry:dt/swiper#3.4.0+20170120190008"
+  }
+}
