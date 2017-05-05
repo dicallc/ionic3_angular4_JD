@@ -1,7 +1,9 @@
 ## ionic3_angular4_JD ##
 
 ### 使用 ###
-#####1.cnpm install或者使用npm install
+<br>
+
+##### 1.cnpm install或者使用npm install
 
 ##### 2.ionic serve  ####
 
@@ -67,4 +69,5 @@ export const FILE_SERVE_URL = 'http://localhost:8100/kit_file_server';
 使用typings 添加**swipe**r(幻灯片)，**ng-lazyload-image**(懒加载)，**jquery**(快捷开发)
 
 <br>
-#### 最后，如果这个项目能帮到你，动动你的鼠标点一下start呗 ####
+
+ #####最后，如果这个项目能帮到你，动动你的鼠标点一下start呗 
