@@ -70,4 +70,4 @@ export const FILE_SERVE_URL = 'http://localhost:8100/kit_file_server';
 
 <br>
 
- #####最后，如果这个项目能帮到你，动动你的鼠标点一下start呗 
+ 最后，如果这个项目能帮到你，动动你的鼠标点一下start呗 
