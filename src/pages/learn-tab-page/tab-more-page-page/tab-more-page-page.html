@@ -1,18 +1,61 @@
-<!--
-  Generated template for the TabMorePagePage page.
+<ion-header id="header">
+  <div class="header-left" (click)="goBack();">
+    <img src="assets/img/common/back.png"/>
+  </div>
+  <div class="header-center">
+    <span>登录</span>
+  </div>
+  <div class="header-right">
+    <span></span>
+  </div>
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>TabMorePagePage</ion-title>
-  </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="content">
+
+  <ion-input id="user_name" placeholder="用户名/邮箱/已验证手机"></ion-input>
+  <div class="div_password_conetnt">
+    <ion-input id="user_password" placeholder="请输入密码" clearInput type="password"></ion-input>
+    <ion-toggle [(ngModel)]="pepperoni"></ion-toggle>
+  </div>
+  <div class="div_password_conetnt">
+    <ion-input id="user_password" placeholder="请输入验证码"></ion-input>
+    <p>|</p>
+    <img width="20%" height="43px" src="assets/img/common/verify_code.jpg">
+  </div>
+
+  <div id="btn_login">
+    <div style="color:gray">登录</div>
+  </div>
+  <div id="onetep_btn_login">
+    <div style="color: red">注册</div>
+  </div>
+  <div class="div_login_check">
+    <ion-checkbox id="checkbox_login" [(ngModel)]="mushrooms" color="red"></ion-checkbox>
+    <div style=" margin-left:5px;color: black "> 一个月内免登陆</div>
+  </div>
+  <div class="div_bttom_function">
+    <div style="display: flex;align-items:center">
+      <img src="assets/img/common/return_password.png" width="24px" height="24px"/>
+      <p>找回密码</p>
+    </div>
+
+    <div style="display: flex; align-items:center">
+      <img src="assets/img/common/register.png" width="24px" height="24px"/>
+      <p>快速注册</p>
+    </div>
+  </div>
+  <div style="display: flex;align-items:center; margin-left: 5%;
+    margin-right: 5%; width: 90%" >
+  <p style="width:30%;height:1px;background-color: #5d5d5d;margin-right: 5% " ></p>
+    <p style="color: #5d5d5d " >其他登录方式</p>
+    <p style="width:30%;height:1px;background-color: #5d5d5d;margin-left: 5% " ></p>
+  </div>
+  <div style="display: flex;flex-direction: column;align-items: center">
+    <img src="assets/img/common/qq.png"  width="24px" height="24px"/>
+    <p>QQ</p>
+  </div>
 
 </ion-content>

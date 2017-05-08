@@ -13,7 +13,6 @@ import {TabDiscoverPage} from "../pages/learn-tab-page/tab-discover-page/tab-dis
 import {TabBroadcastPage} from "../pages/learn-tab-page/tab-broadcast-page/tab-broadcast-page";
 import {TabMessagesPage} from "../pages/learn-tab-page/tab-messages-page/tab-messages-page";
 import {TabMorePagePage} from "../pages/learn-tab-page/tab-more-page-page/tab-more-page-page";
-import {Splash} from "../pages/splash/splash";
 import {GoodListsPage} from "../pages/learn-tab-page/good-lists-page/good-lists-page";
 import {GoodsService} from "../providers/goods-service";
 import {HttpModule} from "@angular/http";
@@ -29,7 +28,6 @@ import {GoodDetailPage} from "../pages/learn-tab-page/good-detail-page/good-deta
     TabMessagesPage,
     TabMorePagePage,
     GoodListsPage,
-    Splash,
     GoodDetailPage,
   ],
   imports: [
@@ -52,7 +50,6 @@ import {GoodDetailPage} from "../pages/learn-tab-page/good-detail-page/good-deta
     TabMessagesPage,
     TabMorePagePage,
     GoodListsPage,
-    Splash,
     GoodDetailPage
 
   ],
