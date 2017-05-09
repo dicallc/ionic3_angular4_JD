@@ -10,7 +10,7 @@ import {Data} from '../providers/data';
 import {LearnTabPage} from "../pages/learn-tab-page/learn-tab-page";
 import {TabHomePage} from "../pages/learn-tab-page/tab-home-page/tab-home-page";
 import {TabDiscoverPage} from "../pages/learn-tab-page/tab-discover-page/tab-discover-page";
-import {TabBroadcastPage} from "../pages/learn-tab-page/tab-broadcast-page/tab-broadcast-page";
+import {TabBroadcastPage} from "../pages/learn-tab-page/tab-look-page/tab-look-page";
 import {TabMessagesPage} from "../pages/learn-tab-page/tab-messages-page/tab-messages-page";
 import {TabMorePagePage} from "../pages/learn-tab-page/tab-more-page-page/tab-more-page-page";
 import {GoodListsPage} from "../pages/learn-tab-page/good-lists-page/good-lists-page";
@@ -18,6 +18,10 @@ import {GoodsService} from "../providers/goods-service";
 import {HttpModule} from "@angular/http";
 import {LazyLoadImageModule} from "ng-lazyload-image";
 import {GoodDetailPage} from "../pages/learn-tab-page/good-detail-page/good-detail-page";
+import { ScrollableTabs } from '../components/scrollable-tabs/scrollable-tabs';
+import {LookService} from "../providers/look-service";
+import {LookContentPage} from "../pages/learn-tab-page/look-content-page/look-content-page";
+import {SuperTabsModule} from "ionic2-super-tabs";
 @NgModule({
   declarations: [
     MyApp,
@@ -29,6 +33,8 @@ import {GoodDetailPage} from "../pages/learn-tab-page/good-detail-page/good-deta
     TabMorePagePage,
     GoodListsPage,
     GoodDetailPage,
+    ScrollableTabs,
+    LookContentPage,
   ],
   imports: [
     LazyLoadImageModule,
@@ -37,6 +43,7 @@ import {GoodDetailPage} from "../pages/learn-tab-page/good-detail-page/good-deta
     IonicModule.forRoot(MyApp,{
       tabsHideOnSubPages: 'true'         //隐藏全部子页面tabs
     }),
+    SuperTabsModule.forRoot(),
     IonicStorageModule.forRoot() //就这里
 
   ],
@@ -50,7 +57,8 @@ import {GoodDetailPage} from "../pages/learn-tab-page/good-detail-page/good-deta
     TabMessagesPage,
     TabMorePagePage,
     GoodListsPage,
-    GoodDetailPage
+    GoodDetailPage,
+    LookContentPage,
 
   ],
   providers: [
@@ -59,6 +67,7 @@ import {GoodDetailPage} from "../pages/learn-tab-page/good-detail-page/good-deta
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     GoodsService,
+    LookService,
   ]
 })
 export class AppModule {

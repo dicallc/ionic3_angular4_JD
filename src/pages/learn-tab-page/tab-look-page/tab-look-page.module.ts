@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { TabBroadcastPage } from './tab-broadcast-page';
+import { TabBroadcastPage } from './tab-look-page';
+import { SuperTabsModule } from 'ionic2-super-tabs';
 
 @NgModule({
   declarations: [
@@ -8,6 +9,7 @@ import { TabBroadcastPage } from './tab-broadcast-page';
   ],
   imports: [
     IonicPageModule.forChild(TabBroadcastPage),
+    SuperTabsModule,
   ],
   exports: [
     TabBroadcastPage

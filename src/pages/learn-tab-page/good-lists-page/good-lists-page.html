@@ -24,7 +24,7 @@
       </ul>
     </div>
   </nav>
-  <ion-content >
+  <ion-content>
     <ion-refresher (ionRefresh)="doRefresh($event)">
       <ion-refresher-content
         pullingIcon="arrow-dropdown"
@@ -33,28 +33,27 @@
         refreshingText="刷新完毕">
 
 
-
       </ion-refresher-content>
     </ion-refresher>
-    <div class="pro" *ngFor="let item of obj_goodsListData, let i = index" (click)="startPage(i);" >
-    <div class="pro-warp">
-    <div class="pro-body">
-    <div class="pro-body-des">
-    <!--<a ng-href="#/details/{{item.productId}}">-->
-    <a >
-    <img src="{{item.img}}" alt="">
-    </a>
-    <div class="pro-body-des-text">
-    <span>{{item.name}}</span>
-    <b>￥{{item.price}}</b>
-    <div class="pro-body-des-con">
-    <span>{{item.haoping}}%好评</span>
-    <span>{{item.buy}}人</span>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
+    <div class="pro" *ngFor="let item of obj_goodsListData, let i = index" (click)="startPage(i);">
+      <div class="pro-warp">
+        <div class="pro-body">
+          <div class="pro-body-des">
+            <!--<a ng-href="#/details/{{item.productId}}">-->
+            <a>
+              <img src="{{item.img}}" alt="">
+            </a>
+            <div class="pro-body-des-text">
+              <span>{{item.name}}</span>
+              <b>￥{{item.price}}</b>
+              <div class="pro-body-des-con">
+                <span>{{item.haoping}}%好评</span>
+                <span>{{item.buy}}人</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
       <ion-infinite-scroll-content

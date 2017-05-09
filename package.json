@@ -24,12 +24,13 @@
     "@ionic-native/status-bar": "3.4.2",
     "@ionic/storage": "2.0.1",
     "ionic-angular": "3.1.1",
+    "ionic2-super-tabs": "^2.5.2",
     "ionicons": "3.0.0",
+    "jquery": "^3.2.1",
+    "ng-lazyload-image": "^3.1.0",
     "rxjs": "5.1.1",
     "sw-toolbox": "3.4.0",
     "swiper": "^3.4.2",
-     "ng-lazyload-image": "^3.1.0",
-         "jquery": "^3.2.1",
     "zone.js": "^0.8.5"
   },
   "devDependencies": {

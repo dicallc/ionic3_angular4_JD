@@ -1,0 +1,39 @@
+<ion-content id="category">
+  <header id="header">
+    <div class="header-left" (click)="goBack();">
+      <span></span>
+    </div>
+
+    <!--<a class="header-center" ng-href="#/search">-->
+    <a class="header-center">
+      <span></span>
+    </a>
+    <div class="header-right">
+      <span></span>
+    </div>
+  </header>
+  <ion-segment #mySlider [(ngModel)]="selectedSegment" color="primary">
+    <ion-segment-button *ngFor="let tab of obj_CategorysListData, let i = index" value="tab.title"
+                        (ionSelect)="selectedFriends(i)">
+      {{tab.Name}}
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-content class="good_list">
+    <div class="pro" *ngFor="let item of obj_GoodsListData, let i = index" >
+      <div class="pro-warp">
+        <div class="pro-body">
+          <div class="pro-body-des">
+            <a>
+              <img src="{{Image_head_Url+item.Picture}}" alt="">
+            </a>
+            <div class="pro-body-des-text">
+              <span>{{item.ProductName}}</span>
+              <b>￥{{item.PromotionInfoPrice}}</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-content>

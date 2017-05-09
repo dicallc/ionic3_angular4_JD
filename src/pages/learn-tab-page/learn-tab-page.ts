@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {TabHomePage} from "./tab-home-page/tab-home-page";
 import {TabDiscoverPage} from "./tab-discover-page/tab-discover-page";
-import {TabBroadcastPage} from "./tab-broadcast-page/tab-broadcast-page";
+import {TabBroadcastPage} from "./tab-look-page/tab-look-page";
 import {TabMessagesPage} from "./tab-messages-page/tab-messages-page";
 import {TabMorePagePage} from "./tab-more-page-page/tab-more-page-page";
 import { Deeplinks } from '@ionic-native/deeplinks';
