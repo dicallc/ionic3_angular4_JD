@@ -22,7 +22,6 @@
   <ion-content class="good_list">
     <div class="pro" *ngFor="let item of obj_GoodsListData, let i = index" >
       <div class="pro-warp">
-        <div class="pro-body">
           <div class="pro-body-des">
             <a>
               <img src="{{Image_head_Url+item.Picture}}" alt="">
@@ -32,7 +31,6 @@
               <b>￥{{item.PromotionInfoPrice}}</b>
             </div>
           </div>
-        </div>
       </div>
     </div>
   </ion-content>
