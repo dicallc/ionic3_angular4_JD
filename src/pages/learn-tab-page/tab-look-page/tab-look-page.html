@@ -20,18 +20,41 @@
   </ion-segment>
 
   <ion-content class="good_list">
-    <div class="pro" *ngFor="let item of obj_GoodsListData, let i = index" >
-      <div class="pro-warp">
-          <div class="pro-body-des">
-            <a>
-              <img src="{{Image_head_Url+item.Picture}}" alt="">
-            </a>
-            <div class="pro-body-des-text">
-              <span>{{item.ProductName}}</span>
-              <b>￥{{item.PromotionInfoPrice}}</b>
+    <!--<div class="pro" *ngFor="let item of obj_GoodsListData, let i = index" >-->
+    <!--<div class="pro-warp">-->
+    <!--<div class="pro-body-des">-->
+    <!--<a>-->
+    <!--<img src="{{Image_head_Url+item.Picture}}" alt="">-->
+    <!--</a>-->
+    <!--<div class="pro-body-des-text">-->
+    <!--<span>{{item.ProductName}}</span>-->
+    <!--<b>￥{{item.PromotionInfoPrice}}</b>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <ion-list style="background-color: #F6F6F6;">
+
+      <ion-item style="padding-right: 5%;padding-left: 5%;" ion-item *ngFor="let item of obj_GoodsListData">
+        <img item-left src="{{Image_head_Url+item.Picture}}" style="width: 30%; height:105px;">
+        <div item-right class="item_right_div">
+          <div style="display: flex;flex-flow: nowrap;flex-direction:row;height: 33%">
+            <div>
+              <a class="item_right_one_content" style="background-color: red;border-radius: 3px;color: white">{{item.OriginStoreName}}</a>
             </div>
+            <p style="margin-left: 5px;display: -webkit-box; -webkit-line-clamp: 2;overflow: hidden; -webkit-box-orient: vertical;"> {{ item.ProductName}} </p>
           </div>
-      </div>
-    </div>
+          <div style="display: flex;flex-flow: nowrap;height: 33%;justify-content: space-between;">
+            <a style="color: gray">{{item.DiscountRate+"折"}}</a>
+            <p style="color: gray;"> {{ "月销"+item.SalesVolume}} </p>
+          </div>
+          <div style="display: flex;flex-flow: nowrap;height: 33%;justify-content: space-between;margin-top: 10px">
+            <a style="color: gray;display: -webkit-box; -webkit-line-clamp: 2;overflow: hidden; -webkit-box-orient: vertical;">{{item.PromotionInfoPrice}}</a>
+            <p style="background-color: red;border-radius: 3px;color: white;padding: 2px;"> {{ item.QuanInfo}} </p>
+          </div>
+        </div>
+
+      </ion-item>
+    </ion-list>
   </ion-content>
 </ion-content>
