@@ -26,6 +26,9 @@
 
 
 
+#####6.可预览android版本apk
+
+[点击下载apk](https://github.com/dicallc/ionic3_angular4_JD/raw/master/gif/android-debug.apk)
 
 ----------
 ### 再次记录从NG1-4一下坑吧 ###
