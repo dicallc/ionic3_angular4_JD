@@ -17,15 +17,15 @@ export class LookService {
     console.log('Hello LookService Provider');
   }
   public getAllcategory(): Observable<string> {
-    return this.http.get("../assets/json/allcategory.json")
+    return this.http.get("assets/json/allcategory.json")
       .map(res => res.json().content);
   }
   public getGoodsList(): Observable<string> {
-    return this.http.get("../assets/json/look_list.json")
+    return this.http.get("assets/json/look_list.json")
       .map(res => res.json().content);
   }
   public getShopCartRecommendList(): Observable<string> {
-    return this.http.get("../assets/json/shopcart.json")
+    return this.http.get("assets/json/shopcart.json")
       .map(res => res.json().content);
   }
 
