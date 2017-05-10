@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { TabMessagesPage } from './tab-messages-page';
+import { TabMessagesPage } from './tab-shopcart-page';
 
 @NgModule({
   declarations: [

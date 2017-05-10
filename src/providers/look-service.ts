@@ -24,6 +24,10 @@ export class LookService {
     return this.http.get("../assets/json/look_list.json")
       .map(res => res.json().content);
   }
+  public getShopCartRecommendList(): Observable<string> {
+    return this.http.get("../assets/json/shopcart.json")
+      .map(res => res.json().content);
+  }
 
 
 }

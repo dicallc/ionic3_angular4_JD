@@ -1,0 +1,82 @@
+<ion-header no-border>
+
+  <ion-toolbar>
+    <ion-buttons start>
+      <span id="left_img"></span>
+    </ion-buttons>
+    <ion-title>购物车</ion-title>
+    <ion-buttons end>
+      <span id="right_img"></span>
+    </ion-buttons>
+  </ion-toolbar>
+
+
+</ion-header>
+
+
+<ion-content class="cart_content">
+  <div class="cart_content_head">
+    <img src="assets/img/common/cart.empty.png" style="width: 31px;height: 31px"/>
+    <span style="margin-left: 5px;font-size: 12px;color: #bfbfbf;">登录后可同步电脑与手机购物车</span>
+    <button style="margin-left: 5px;background-color: #F23030;border-radius: 3px;color: white;width: 56px;height: 20px">登录</button>
+  </div>
+  <div class="card_today_get">
+    <p style="width: 35%;height: 1px;background-color: #CBCBCB;margin-right: 5%"></p>
+    <img src="assets/img/common/benefit.icon.png" style="width: 13px;height: 13px">
+    <span style="font-size: 14px;color: #848689;margin-left: 5px">今日福利</span>
+    <p style="width: 35%;height: 1px;background-color: #CBCBCB;margin-left: 5%"></p>
+  </div>
+  <div style="width: 100%;height: 70px;display: flex;flex-direction: row;align-items: center;margin-top: 10px">
+
+    <ion-card style="width: 48%;height: 100%;margin-left: 1%;margin-right: 1%;display: flex;">
+      <img src="assets/img/common/act_coupon.png" style="width: 64px;height: 64px"/>
+      <ion-card-content style="margin-left:15px;display: flex;flex-direction: column;justify-content: space-between;align-items: center">
+        <ion-card-title style="color: #F23030">
+        每日神券
+        </ion-card-title>
+        <p>
+          限量发放,快去抢
+        </p>
+      </ion-card-content>
+    </ion-card>
+    <ion-card style="width: 48%;height: 100%;margin-left: 1%;margin-right: 1%;display: flex;">
+      <img src="assets/img/common/act_coupon.png"style="width: 64px;height: 64px"/>
+      <ion-card-content style="margin-left:15px;display: flex;flex-direction: column;justify-content: space-between;align-items: center">
+        <ion-card-title style="color: #F23030">
+        整点秒杀
+        </ion-card-title>
+        <p>
+          限时抢购,拼手速
+        </p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <div class="card_hot_sail">
+    <p style="width: 35%;height: 1px;background-color: #CBCBCB;margin-right: 5%"></p>
+    <img src="assets/img/common/act_secskll.png" style="width: 13px;height: 13px">
+    <span style="font-size: 14px;color: #848689;margin-left: 5px">看看热卖</span>
+    <p style="width: 35%;height: 1px;background-color: #CBCBCB;margin-left: 5%"></p>
+  </div>
+
+  <ul style="display: flex;flex-wrap: wrap;list-style:none;padding: 0px;margin: 0px" >
+    <li style="width: 50%;margin-top: 10px;" *ngFor="let item of obj_ShopCartRecommendData, let i = index">
+      <ion-card id="reconmend_list">
+        <img src="{{Image_head_Url+item.Picture}}">
+
+        <ion-card-content>
+          <p>{{item.ProductName}}</p>
+        </ion-card-content>
+
+        <ion-row>
+          <ion-col style="color: red">
+            {{"¥"+item.RealPrice}}
+          </ion-col>
+          <ion-col style="display: flex;flex-direction: row-reverse">
+            <p style="width: 50px;height: 25px;border:1px solid #DEDEDE;;color: #686868">看相似</p>
+          </ion-col>
+        </ion-row>
+
+      </ion-card>
+    </li>
+  </ul>
+</ion-content>

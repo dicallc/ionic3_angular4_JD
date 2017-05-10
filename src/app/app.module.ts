@@ -11,8 +11,8 @@ import {LearnTabPage} from "../pages/learn-tab-page/learn-tab-page";
 import {TabHomePage} from "../pages/learn-tab-page/tab-home-page/tab-home-page";
 import {TabDiscoverPage} from "../pages/learn-tab-page/tab-discover-page/tab-discover-page";
 import {TabBroadcastPage} from "../pages/learn-tab-page/tab-look-page/tab-look-page";
-import {TabMessagesPage} from "../pages/learn-tab-page/tab-messages-page/tab-messages-page";
-import {TabMorePagePage} from "../pages/learn-tab-page/tab-more-page-page/tab-more-page-page";
+import {TabMessagesPage} from "../pages/learn-tab-page/tab-shopcart-page/tab-shopcart-page";
+import {TabMorePagePage} from "../pages/learn-tab-page/tab-my-page-page/tab-my-page-page";
 import {GoodListsPage} from "../pages/learn-tab-page/good-lists-page/good-lists-page";
 import {GoodsService} from "../providers/goods-service";
 import {HttpModule} from "@angular/http";
@@ -41,7 +41,11 @@ import {SuperTabsModule} from "ionic2-super-tabs";
     BrowserModule,
     HttpModule,
     IonicModule.forRoot(MyApp,{
-      tabsHideOnSubPages: 'true'         //隐藏全部子页面tabs
+      tabsHideOnSubPages: 'true' ,       //隐藏全部子页面tabs
+      iconMode: 'ios',
+      mode: 'ios',
+      modalEnter: 'modal-slide-in',
+      modalLeave: 'modal-slide-out',
     }),
     SuperTabsModule.forRoot(),
     IonicStorageModule.forRoot() //就这里

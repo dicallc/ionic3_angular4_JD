@@ -10,7 +10,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @IonicPage()
 @Component({
   selector: 'page-tab-more-page-page',
-  templateUrl: 'tab-more-page-page.html',
+  templateUrl: 'tab-my-page-page.html',
 })
 export class TabMorePagePage {
 

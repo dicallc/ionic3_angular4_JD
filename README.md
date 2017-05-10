@@ -100,3 +100,15 @@ export const FILE_SERVE_URL = 'http://localhost:8100/kit_file_server';
 
 
 <img src="/gif/20170509172835.png"  alt="上海鲜花港 - 郁金香" />
+
+ 
+
+<b>5/10/2017 12:21:58 PM  </b>
+
+1.使用官方组件，cards，toobar，完成购物车界面，高仿京东
+
+小结：总体全部使用ios样式，变化挺大的，估计下一步就考虑适配，和性能问题了，一次编译时间事件挺久的
+
+
+<br>
+<img src="/gif/image.png"  alt="上海鲜花港 - 郁金香" />
