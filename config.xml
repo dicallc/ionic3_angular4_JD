@@ -18,16 +18,20 @@
     <preference name="DisallowOverscroll" value="true"/>
     <preference name="android-minSdkVersion" value="16"/>
     <preference name="BackupWebStorage" value="none"/>
-    <preference name="SplashMaintainAspectRatio" value="true"/>
-    <preference name="FadeSplashScreenDuration" value="300"/>
 
     <!--
       Change these to configure how the splashscreen displays and fades in/out.
       More info here: https://github.com/apache/cordova-plugin-splashscreen
     -->
-    <preference name="SplashShowOnlyFirstTime" value="false"/>
-    <preference name="SplashScreen" value="screen"/>
-    <preference name="SplashScreenDelay" value="3000"/>
+  <preference name="ShowSplashScreen" value="true"/>
+  <preference name="SplashScreen" value="screen"/>
+  <preference name="SplashScreenDelay" value="3000"/>
+  <preference name="AutoHideSplashScreen" value="false"/>
+  <preference name="SplashShowOnlyFirstTime" value="false"/>
+  <preference name="FadeSplashScreen" value="false"/>
+  <feature name="SplashScreen">
+    <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen"/>
+  </feature>
 
     <platform name="android">
         <allow-intent href="market:*"/>

@@ -26,9 +26,9 @@
 
 
 
-#####6.可预览android版本apk
+#### 6.可预览android版本apk
 
-[点击下载apk](https://github.com/dicallc/ionic3_angular4_JD/raw/master/gif/android-debug.apk)
+[点击下载apk](https://github.com/dicallc/ionic3_angular4_JD/raw/master/gif/android-release.apk)
 
 ----------
 ### 再次记录从NG1-4一下坑吧 ###
@@ -118,3 +118,17 @@ export const FILE_SERVE_URL = 'http://localhost:8100/kit_file_server';
 
 <br>
 <img src="/gif/image.png"  alt="上海鲜花港 - 郁金香" />
+
+
+<b>5/11/2017 12:24:00 PM  </b>
+
+1.分模块加载页面，使用--prod，检测代码，优化以后代码
+
+2.优化后的apk可直接秒进入，不需要等待白屏
+
+3.微调我界面的ui
+
+4.添加key 可以直接打prod模式的release
+
+    ionic build android --release --prod
+ 

@@ -32,7 +32,8 @@
             <div class="content-body">
               <!--<li class="content-body-list" *ngFor="item in categoryDetailData" ui-sref="goodsList({typeNumber:1})">-->
               <li class="content-body-list" *ngFor="let item of categoryDetailData, let i = index" (click)="startPage(i);" >
-                <img [defaultImage]="assets/img/common/common_default"  [lazyLoad]="item.src" />
+                <!--<img [defaultImage]="assets/img/common/common_default"  [lazyLoad]="item.src" />-->
+                <img src="{{item.src}}" />
                 <span>{{item.name}}</span>
               </li>
             </div>
@@ -41,7 +42,8 @@
             </div>
             <div class="content-body">
               <li class="content-body-list" *ngFor="let item of obj_GoodsListData, let i = index">
-                <img [defaultImage]="assets/img/common/common_default"  [lazyLoad]="item.src" />
+                <!--<img [defaultImage]="assets/img/common/common_default"  [lazyLoad]="item.src" />-->
+                <img src="{{item.src}}" />
                 <span>{{item.name}}</span>
               </li>
             </div>

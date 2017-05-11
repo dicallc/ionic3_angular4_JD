@@ -7,10 +7,11 @@ import { TabHomePage } from './tab-home-page';
     TabHomePage,
   ],
   imports: [
-    IonicPageModule.forChild(TabHomePage),
+    IonicPageModule
   ],
   exports: [
-    TabHomePage
-  ]
+    IonicPageModule
+  ],
+  entryComponents:[TabHomePage]
 })
 export class TabHomePageModule {}

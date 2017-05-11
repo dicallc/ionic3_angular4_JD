@@ -2,7 +2,6 @@ import {Component, ElementRef, ViewChild } from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import * as Swiper from 'swiper';
 import * as $ from 'jquery';
-@IonicPage()
 @Component({
   selector: 'page-tab-home-page',
   templateUrl: 'tab-home-page.html',

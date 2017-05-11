@@ -7,34 +7,29 @@ import {StatusBar} from '@ionic-native/status-bar';
 import {MyApp} from './app.component';
 import { IonicStorageModule } from '@ionic/storage';
 import {Data} from '../providers/data';
-import {LearnTabPage} from "../pages/learn-tab-page/learn-tab-page";
-import {TabHomePage} from "../pages/learn-tab-page/tab-home-page/tab-home-page";
-import {TabDiscoverPage} from "../pages/learn-tab-page/tab-discover-page/tab-discover-page";
-import {TabBroadcastPage} from "../pages/learn-tab-page/tab-look-page/tab-look-page";
-import {TabMessagesPage} from "../pages/learn-tab-page/tab-shopcart-page/tab-shopcart-page";
-import {TabMorePagePage} from "../pages/learn-tab-page/tab-my-page-page/tab-my-page-page";
+// import {LearnTabPage} from "../pages/learn-tab-page/learn-tab-page";
+// import {TabHomePage} from "../pages/learn-tab-page/tab-home-page/tab-home-page";
+// import {TabDiscoverPage} from "../pages/learn-tab-page/tab-discover-page/tab-discover-page";
+// import {TabBroadcastPage} from "../pages/learn-tab-page/tab-look-page/tab-look-page";
+// import {TabMessagesPage} from "../pages/learn-tab-page/tab-shopcart-page/tab-shopcart-page";
+// import {TabMorePagePage} from "../pages/learn-tab-page/tab-my-page-page/tab-my-page-page";
 import {GoodListsPage} from "../pages/learn-tab-page/good-lists-page/good-lists-page";
 import {GoodsService} from "../providers/goods-service";
 import {HttpModule} from "@angular/http";
 import {LazyLoadImageModule} from "ng-lazyload-image";
 import {GoodDetailPage} from "../pages/learn-tab-page/good-detail-page/good-detail-page";
-import { ScrollableTabs } from '../components/scrollable-tabs/scrollable-tabs';
 import {LookService} from "../providers/look-service";
-import {LookContentPage} from "../pages/learn-tab-page/look-content-page/look-content-page";
+// import {LookContentPage} from "../pages/learn-tab-page/look-content-page/look-content-page";
 import {SuperTabsModule} from "ionic2-super-tabs";
+import {TabHomePageModule} from "../pages/learn-tab-page/tab-home-page/tab-home-page.module";
+import {TabBroadcastPageModule} from "../pages/learn-tab-page/tab-look-page/tab-look-page.module";
+import {TabDiscoverPageModule} from "../pages/learn-tab-page/tab-discover-page/tab-discover-page.module";
+import {TabMorePagePageModule} from "../pages/learn-tab-page/tab-my-page-page/tab-my-page-page.module";
+import {TabMessagesPageModule} from "../pages/learn-tab-page/tab-shopcart-page/tab-shopcart-page.module";
+import {LearnTabPageModule} from "../pages/learn-tab-page/learn-tab-page.module";
 @NgModule({
   declarations: [
     MyApp,
-    LearnTabPage,
-    TabHomePage,
-    TabDiscoverPage,
-    TabBroadcastPage,
-    TabMessagesPage,
-    TabMorePagePage,
-    GoodListsPage,
-    GoodDetailPage,
-    ScrollableTabs,
-    LookContentPage,
   ],
   imports: [
     LazyLoadImageModule,
@@ -48,22 +43,18 @@ import {SuperTabsModule} from "ionic2-super-tabs";
       modalLeave: 'modal-slide-out',
     }),
     SuperTabsModule.forRoot(),
-    IonicStorageModule.forRoot() //就这里
+    IonicStorageModule.forRoot(),//就这里
+    LearnTabPageModule,
+    TabHomePageModule,
+    TabBroadcastPageModule,
+    TabDiscoverPageModule,
+    TabMorePagePageModule,
+    TabMessagesPageModule,
 
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    LearnTabPage,
-    TabHomePage,
-    TabDiscoverPage,
-    TabBroadcastPage,
-    TabMessagesPage,
-    TabMorePagePage,
-    GoodListsPage,
-    GoodDetailPage,
-    LookContentPage,
-
   ],
   providers: [
     Data,

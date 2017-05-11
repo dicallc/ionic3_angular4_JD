@@ -9,7 +9,6 @@ import {GOODLIST_head_URL} from "../../../providers/Constants";
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
-@IonicPage()
 @Component({
   selector: 'page-tab-messages-page',
   templateUrl: 'tab-shopcart-page.html',

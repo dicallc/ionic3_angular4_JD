@@ -2,7 +2,6 @@ import {Component, ViewChild} from '@angular/core';
 import {IonicPage, NavController, NavParams, Slides} from 'ionic-angular';
 import {LookService} from "../../../providers/look-service";
 import {GOODLIST_head_URL} from "../../../providers/Constants";
-@IonicPage()
 @Component({
   selector: 'page-tab-broadcast-page',
   templateUrl: 'tab-look-page.html',

@@ -7,10 +7,11 @@ import { TabMessagesPage } from './tab-shopcart-page';
     TabMessagesPage,
   ],
   imports: [
-    IonicPageModule.forChild(TabMessagesPage),
+    IonicPageModule
   ],
   exports: [
-    TabMessagesPage
-  ]
+    IonicPageModule
+  ],
+  entryComponents:[TabMessagesPage],
 })
 export class TabMessagesPageModule {}

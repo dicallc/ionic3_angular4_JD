@@ -7,10 +7,11 @@ import { TabMorePagePage } from './tab-my-page-page';
     TabMorePagePage,
   ],
   imports: [
-    IonicPageModule.forChild(TabMorePagePage),
+    IonicPageModule
   ],
   exports: [
-    TabMorePagePage
-  ]
+    IonicPageModule
+  ],
+  entryComponents:[TabMorePagePage]
 })
 export class TabMorePagePageModule {}

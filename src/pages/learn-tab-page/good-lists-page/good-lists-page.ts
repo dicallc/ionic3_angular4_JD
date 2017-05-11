@@ -4,7 +4,6 @@ import {GoodsService} from "../../../providers/goods-service";
 import {GoodDetailPage} from "../good-detail-page/good-detail-page";
 
 
-@IonicPage()
 @Component({
   selector: 'page-good-lists-page',
   templateUrl: 'good-lists-page.html',
