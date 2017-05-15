@@ -38,20 +38,45 @@
       <ion-item style="padding-right: 5%;padding-left: 5%;" ion-item *ngFor="let item of obj_GoodsListData">
         <img item-left src="{{Image_head_Url+item.Picture}}" style="width: 30%; height:105px;">
         <div item-right class="item_right_div">
-          <div style="display: flex;flex-flow: nowrap;flex-direction:row;height: 33%">
-            <div>
-              <a class="item_right_one_content" style="background-color: red;border-radius: 3px;color: white">{{item.OriginStoreName}}</a>
+          <ion-row style="height: 10%">
+            <ion-col col-auto>
+              <a class="item_right_one_content" style="font-size:14px;background-color: red;border-radius: 3px;color: white">{{item.OriginStoreName}}</a>
+            </ion-col>
+            <ion-col width-70>
+              <p
+                style="font-size:14px;margin-left: 5px;display: -webkit-box; -webkit-line-clamp: 2;overflow: hidden; -webkit-box-orient: vertical;">
+                {{ item.ProductName}} </p>
+            </ion-col>
+          </ion-row>
+          <ion-row class="row row-center" style="height: 33%">
+            <a class="col" style="font-size:14px;color: gray">{{item.DiscountRate+"折"}}</a>
+            <p class="col" style="font-size:14px;color: gray;"> {{ "月销"+item.SalesVolume}} </p>
+          </ion-row>
+          <ion-row class="row justify-content-between justify-content-center">
+            <a class="col"
+               style="padding-right:10%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;
+                      font-size:14px;color: gray;display: -webkit-box; -webkit-line-clamp: 2;overflow: hidden; -webkit-box-orient: vertical;">{{item.PromotionInfoPrice}}</a>
+            <div class="col" align-self-center col-auto>
+              <a
+                style="font-size:14px;margin-top:1px;margin-bottom:1px;background-color: red;border-radius: 3px;color: white;padding: 2px;">{{item.QuanInfo}}</a>
             </div>
-            <p style="margin-left: 5px;display: -webkit-box; -webkit-line-clamp: 2;overflow: hidden; -webkit-box-orient: vertical;"> {{ item.ProductName}} </p>
-          </div>
-          <div style="display: flex;flex-flow: nowrap;height: 33%;justify-content: space-between;">
-            <a style="color: gray">{{item.DiscountRate+"折"}}</a>
-            <p style="color: gray;"> {{ "月销"+item.SalesVolume}} </p>
-          </div>
-          <div style="display: flex;flex-flow: nowrap;height: 33%;justify-content: space-between;margin-top: 10px">
-            <a style="color: gray;display: -webkit-box; -webkit-line-clamp: 2;overflow: hidden; -webkit-box-orient: vertical;">{{item.PromotionInfoPrice}}</a>
-            <p style="background-color: red;border-radius: 3px;color: white;padding: 2px;"> {{ item.QuanInfo}} </p>
-          </div>
+          </ion-row>
+          <!--<div style="display: flex;flex-flow: nowrap;flex-direction:row;height: 33%">-->
+          <!--<div>-->
+          <!--<a class="item_right_one_content" style="background-color: red;border-radius: 3px;color: white">{{item.OriginStoreName}}</a>-->
+          <!--</div>-->
+          <!--<p style="margin-left: 5px;display: -webkit-box; -webkit-line-clamp: 2;overflow: hidden; -webkit-box-orient: vertical;"> {{ item.ProductName}} </p>-->
+          <!--</div>-->
+
+
+          <!--<div style="display: flex;flex-flow: nowrap;height: 33%;justify-content: space-between;">-->
+          <!--<a style="color: gray">{{item.DiscountRate+"折"}}</a>-->
+          <!--<p style="color: gray;"> {{ "月销"+item.SalesVolume}} </p>-->
+          <!--</div>-->
+          <!--<div style="display: flex;flex-flow: nowrap;height: 33%;justify-content: space-between;margin-top: 10px">-->
+          <!--<a style="color: gray;display: -webkit-box; -webkit-line-clamp: 2;overflow: hidden; -webkit-box-orient: vertical;">{{item.PromotionInfoPrice}}</a>-->
+          <!--<p style="background-color: red;border-radius: 3px;color: white;padding: 2px;"> {{ item.QuanInfo}} </p>-->
+          <!--</div>-->
         </div>
 
       </ion-item>

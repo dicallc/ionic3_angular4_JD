@@ -150,8 +150,11 @@ page-tab-broadcast-page {
   }
   .item_right_div {
     margin-right: 5%;
-    display: flex;
-    flex-direction: column;
+    //display: flex;
+    //display: -webkit-box;
+    //display: -ms-flexbox;
+    //display: -webkit-flex;
+    //flex-direction: column;
   }
   .item_right_one_content {
     overflow: hidden;

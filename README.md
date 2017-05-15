@@ -132,3 +132,22 @@ export const FILE_SERVE_URL = 'http://localhost:8100/kit_file_server';
 
     ionic build android --release --prod
  
+
+<b>5/15/2017 5:18:38 PM   </b>
+
+1.重新使用ionic的grid布局，解决css样式兼容性问题,意外的发现兼容性存在很大的问题
+
+**如对于flex布局**
+
+
+- android:UC的内核就不兼容
+- ios:9.3系统+
+
+
+[查询css样式兼容情况](http://caniuse.com/#feat=flexbox)
+
+同时找到一个第三方css，可在不同内核实现flex布局
+
+[flex.css](https://github.com/lzxb/flex.css)
+
+待以后尝试一下了
