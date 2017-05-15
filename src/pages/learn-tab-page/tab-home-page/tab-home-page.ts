@@ -1,5 +1,5 @@
 import {Component, ElementRef, ViewChild } from '@angular/core';
-import {IonicPage, NavController, NavParams} from 'ionic-angular';
+import { NavController, NavParams} from 'ionic-angular';
 import * as Swiper from 'swiper';
 import * as $ from 'jquery';
 @Component({
@@ -113,7 +113,7 @@ export class TabHomePage {
 
   // 初始化京东头条滚动条
   private initToutiaoSlide() {
-    var toutiaoSwiper = new Swiper('#toutiaoSlider', {
+    new Swiper('#toutiaoSlider', {
       direction:'vertical',
       autoplay: 2000,
       loop: true

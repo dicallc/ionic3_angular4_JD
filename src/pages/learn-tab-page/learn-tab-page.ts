@@ -5,7 +5,6 @@ import {TabDiscoverPage} from "./tab-discover-page/tab-discover-page";
 import {TabBroadcastPage} from "./tab-look-page/tab-look-page";
 import {TabMessagesPage} from "./tab-shopcart-page/tab-shopcart-page";
 import {TabMorePagePage} from "./tab-my-page-page/tab-my-page-page";
-import {Deeplinks} from '@ionic-native/deeplinks';
 
 
 @IonicPage()
