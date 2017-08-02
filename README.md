@@ -1,7 +1,15 @@
 ## ionic3_angular4_JD ##
 
+最近在逛淘宝的时候，居然看到有人在卖我的源码，标价十元，已经卖出几份，为买了的人心疼，为了打击二道贩子
+
+##### 现代码才用采用GPL协议开源！！！！！禁止用作商业用途！！ ####
+##### 现代码才用采用GPL协议开源！！！！！禁止用作商业用途！！ ####
+##### 现代码才用采用GPL协议开源！！！！！禁止用作商业用途！！ ####
+
+重要的事情说三遍，此项目只能用于学习和交流，有什么问题大家可以提ISSUE，我自己也在在尝试把AG4作为前端主要框架使用，都是菜鸟大家可以多交流,哈哈，没办法我是谷歌粉
+
 ### 使用 ###
-<br>
+
 
 
 ##### 1.cnpm install或者使用npm install
@@ -15,20 +23,24 @@
        ionic platform add ios/android
 
 ##### 4运行android/ios平台####
-	ionic run adroid/ios
+	ionic run android/ios
 
 
 ##### 5.预览界面 ####
 
 ----------
 
-<img src="/gif/GIF.gif"  alt="上海鲜花港 - 郁金香" />
+<img src="https://raw.githubusercontent.com/dicallc/ionic3_angular4_JD/master/gif/GIF.gif"  alt="上海鲜花港 - 郁金香" />
 
 
 
 #### 6.可预览android版本apk
 
 [点击下载apk](https://github.com/dicallc/ionic3_angular4_JD/raw/master/gif/android-release.apk)
+
+#### 7.源码查看
+
+[点击打开代码地址](https://github.com/dicallc/ionic3_angular4_JD)
 
 ----------
 ### 再次记录从NG1-4一下坑吧 ###
@@ -65,7 +77,7 @@ export const FILE_SERVE_URL = 'http://localhost:8100/kit_file_server';
 
 #### 更多详细的看下面的思维导图吧，是自己做的笔记 更详细内容在gif文件中的思维导图 ####
 
-<img src="/gif/daotu.png"  alt="上海鲜花港 - 郁金香" />
+<img src="https://raw.githubusercontent.com/dicallc/ionic3_angular4_JD/master/gif/daotu.png"  alt="上海鲜花港 - 郁金香" />
 
 ### 结语： ###
 1.耗时两周自学angular4和ionic3，其实很多东西不一样了，还好有SS，自从学了前端，一直在墙外看资料，看了很多人记录的帖子，觉得应该回报一下开源了。
@@ -105,7 +117,7 @@ export const FILE_SERVE_URL = 'http://localhost:8100/kit_file_server';
 <br>
 
 
-<img src="/gif/20170509172835.png"  alt="上海鲜花港 - 郁金香" />
+<img src="https://raw.githubusercontent.com/dicallc/ionic3_angular4_JD/master/gif/20170509172835.png"  alt="上海鲜花港 - 郁金香" />
 
  
 
@@ -117,7 +129,7 @@ export const FILE_SERVE_URL = 'http://localhost:8100/kit_file_server';
 
 
 <br>
-<img src="/gif/image.png"  alt="上海鲜花港 - 郁金香" />
+<img src="https://raw.githubusercontent.com/dicallc/ionic3_angular4_JD/master/gif/image.png"  alt="上海鲜花港 - 郁金香" />
 
 
 <b>5/11/2017 12:24:00 PM  </b>

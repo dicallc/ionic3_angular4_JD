@@ -29,7 +29,6 @@ export class GoodListsPage {
 
   private loadNetData(refresher: any) {
     this.goodsService.getGoodLists().subscribe(
-
       countries => this.obj_goodsListData = <any>countries,
       error => this.errorMessage = <any>error,
       function complete() {
