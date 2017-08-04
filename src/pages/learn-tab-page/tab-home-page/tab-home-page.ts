@@ -1,7 +1,6 @@
 import {Component, ElementRef, ViewChild } from '@angular/core';
 import { NavController, NavParams} from 'ionic-angular';
 import * as Swiper from 'swiper';
-import * as $ from 'jquery';
 @Component({
   selector: 'page-tab-home-page',
   templateUrl: 'tab-home-page.html',
@@ -170,10 +169,10 @@ export class TabHomePage {
     }
 
   }
-  categoryLeftClick=function(e){
-    e.target.className='nav-current';
-    $(e.target).siblings().removeClass().addClass('nav-blur');
-  };
+  // categoryLeftClick=function(e){
+  //   e.target.className='nav-current';
+  //   $(e.target).siblings().removeClass().addClass('nav-blur');
+  // };
 
 
 }
