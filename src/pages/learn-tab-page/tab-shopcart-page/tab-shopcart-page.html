@@ -1,5 +1,4 @@
 <ion-header no-border>
-
   <ion-toolbar>
     <ion-buttons start>
       <span id="left_img"></span>
@@ -9,75 +8,40 @@
       <span id="right_img"></span>
     </ion-buttons>
   </ion-toolbar>
-
-
 </ion-header>
 
 
 <ion-content class="cart_content">
-  <div class="cart_content_head">
-    <img src="assets/img/common/cart.empty.png" style="width: 31px;height: 31px"/>
-    <span style="margin-left: 5px;font-size: 12px;color: #bfbfbf;">登录后可同步电脑与手机购物车</span>
-    <button style="margin-left: 5px;background-color: #F23030;border-radius: 3px;color: white;width: 56px;height: 20px">登录</button>
-  </div>
-  <div class="card_today_get">
-    <p style="width: 35%;height: 1px;background-color: #CBCBCB;margin-right: 5%"></p>
-    <img src="assets/img/common/benefit.icon.png" style="width: 13px;height: 13px">
-    <span style="font-size: 14px;color: #848689;margin-left: 5px">今日福利</span>
-    <p style="width: 35%;height: 1px;background-color: #CBCBCB;margin-left: 5%"></p>
-  </div>
-  <div style="width: 100%;height: 70px;
-  display: flex;flex-direction: row;align-items: center;margin-top: 10px">
-  <!--display: flex;flex-direction: row;align-items: center;margin-top: 10px">-->
-    <ion-card style="width: 48%;height: 100%;margin-left: 1%;margin-right: 1%;display: flex;">
-      <img src="assets/img/common/act_coupon.png" style="width: 64px;height: 64px"/>
-      <ion-card-content style="margin-left:15px;display: flex;flex-direction: column;justify-content: space-between;align-items: center">
-        <ion-card-title style="color: #F23030">
-        每日神券
-        </ion-card-title>
-        <p>
-          限量发放,快去抢
-        </p>
-      </ion-card-content>
-    </ion-card>
-    <ion-card style="width: 48%;height: 100%;margin-left: 1%;margin-right: 1%;display: flex;">
-      <img src="assets/img/common/act_coupon.png"style="width: 64px;height: 64px"/>
-      <ion-card-content style="margin-left:15px;display: flex;flex-direction: column;justify-content: space-between;align-items: center">
-        <ion-card-title style="color: #F23030">
-        整点秒杀
-        </ion-card-title>
-        <p>
-          限时抢购,拼手速
-        </p>
-      </ion-card-content>
-    </ion-card>
-  </div>
-  <div class="card_hot_sail">
-    <p style="width: 35%;height: 1px;background-color: #CBCBCB;margin-right: 5%"></p>
-    <img src="assets/img/common/act_secskll.png" style="width: 13px;height: 13px">
-    <span style="font-size: 14px;color: #848689;margin-left: 5px">看看热卖</span>
-    <p style="width: 35%;height: 1px;background-color: #CBCBCB;margin-left: 5%"></p>
-  </div>
+  <!--购物车界面-->
+    <div *ngFor="let item of shopcart, let i = index" style="background-color: white">
+      <ion-item>
+        <ion-label >{{item.shops.shop_name}}</ion-label>
+        <ion-checkbox color="danger" checked={{item.shops.isSelect}} (ionChange)="AddRemoveRecipeToFavorite(item,i);"></ion-checkbox>
+      </ion-item>
 
-  <ul style="display: flex;flex-wrap: wrap;list-style:none;padding: 0px;margin: 0px" >
-    <li style="width: 50%;margin-top: 10px;" *ngFor="let item of obj_ShopCartRecommendData, let i = index">
-      <ion-card id="reconmend_list">
-        <img src="{{Image_head_Url+item.Picture}}">
+      <ion-row *ngFor="let products_item of item.shops.products, let products_index = index" style="border-bottom: 0.55px solid gray">
+        <ion-col col-3 style="display:flex;align-items: center">
+          <img src="assets/img/nanz5.jpg" alt=""/>
+        </ion-col>
+        <ion-col col-9>
+          <h2>{{products_item.name}}</h2>
+          <p style="color: gray">双十一价格9.9包邮,近期期待</p>
+          <div>
+            <label>￥{{products_item.price}}</label>
+            <div style="display: inline-flex;margin-left: 20px">
+              <img src="assets/img/add.png" style="width: 15px;height: 15px" (click)="addNum(i,products_index);"/>
+              <label style="border: 1px solid gray;margin-left: 5px;margin-right: 5px">{{products_item.num}}</label>
+              <img src="assets/img/reduce.png" style="width: 15px;height: 15px" (click)="reduceNum(i,products_index);"/>
+              <img src="assets/img/delete.png" style="margin-left:20px;width: 15px;height: 15px" (click)="deleteProduct(i,products_index);"/>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+      <div style="display: flex; align-items:center;border-bottom: 0.55px solid gray" >
+        <div style="float: right;margin: 10px">
+          <label style="margin-right: 10px"> 总价:￥{{item.shops.allPrise}}</label>
+        </div>
 
-        <ion-card-content>
-          <p>{{item.ProductName}}</p>
-        </ion-card-content>
-
-        <ion-row>
-          <ion-col style="color: red">
-            {{"¥"+item.RealPrice}}
-          </ion-col>
-          <ion-col style="display: flex;flex-direction: row-reverse">
-            <p style="width: 50px;height: 25px;border:1px solid #DEDEDE;;color: #686868">看相似</p>
-          </ion-col>
-        </ion-row>
-
-      </ion-card>
-    </li>
-  </ul>
+      </div>
+    </div>
 </ion-content>
