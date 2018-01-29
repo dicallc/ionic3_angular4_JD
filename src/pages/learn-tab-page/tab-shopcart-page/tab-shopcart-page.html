@@ -13,35 +13,54 @@
 
 <ion-content class="cart_content">
   <!--购物车界面-->
-    <div *ngFor="let item of shopcart, let i = index" style="background-color: white">
-      <ion-item>
-        <ion-label >{{item.shops.shop_name}}</ion-label>
-        <ion-checkbox color="danger" checked={{item.shops.isSelect}} (ionChange)="AddRemoveRecipeToFavorite(item,i);"></ion-checkbox>
-      </ion-item>
+  <div *ngFor="let item of shopcart, let i = index" style="background-color: white">
+    <ion-item>
+      <ion-label>{{item.shops.shop_name}}</ion-label>
+      <ion-checkbox color="danger" checked={{item.shops.isSelect}}
+                    (ionChange)="AddRemoveRecipeToFavorite(item,i);"></ion-checkbox>
+    </ion-item>
 
-      <ion-row *ngFor="let products_item of item.shops.products, let products_index = index" style="border-bottom: 0.55px solid gray">
-        <ion-col col-3 style="display:flex;align-items: center">
-          <img src="assets/img/nanz5.jpg" alt=""/>
-        </ion-col>
-        <ion-col col-9>
-          <h2>{{products_item.name}}</h2>
-          <p style="color: gray">双十一价格9.9包邮,近期期待</p>
-          <div>
-            <label>￥{{products_item.price}}</label>
-            <div style="display: inline-flex;margin-left: 20px">
-              <img src="assets/img/add.png" style="width: 15px;height: 15px" (click)="addNum(i,products_index);"/>
-              <label style="border: 1px solid gray;margin-left: 5px;margin-right: 5px">{{products_item.num}}</label>
-              <img src="assets/img/reduce.png" style="width: 15px;height: 15px" (click)="reduceNum(i,products_index);"/>
-              <img src="assets/img/delete.png" style="margin-left:20px;width: 15px;height: 15px" (click)="deleteProduct(i,products_index);"/>
-            </div>
+    <ion-row *ngFor="let products_item of item.shops.products, let products_index = index"
+             style="border-bottom: 0.55px solid gray">
+      <ion-col col-3 style="display:flex;align-items: center">
+        <img src="assets/img/nanz5.jpg" alt=""/>
+      </ion-col>
+      <ion-col col-9>
+        <h2>{{products_item.name}}</h2>
+        <p style="color: gray">双十一价格9.9包邮,近期期待</p>
+        <div>
+          <label>￥{{products_item.price}}</label>
+          <div style="display: inline-flex;margin-left: 20px">
+            <img src="assets/img/add.png" style="width: 15px;height: 15px" (click)="addNum(i,products_index);"/>
+            <label style="border: 1px solid gray;margin-left: 5px;margin-right: 5px">{{products_item.num}}</label>
+            <img src="assets/img/reduce.png" style="width: 15px;height: 15px" (click)="reduceNum(i,products_index);"/>
+            <img src="assets/img/delete.png" style="margin-left:20px;width: 15px;height: 15px"
+                 (click)="deleteProduct(i,products_index);"/>
           </div>
-        </ion-col>
-      </ion-row>
-      <div style="display: flex; align-items:center;border-bottom: 0.55px solid gray" >
-        <div style="float: right;margin: 10px">
-          <label style="margin-right: 10px"> 总价:￥{{item.shops.allPrise}}</label>
         </div>
-
+      </ion-col>
+    </ion-row>
+    <div style="display: flex; align-items:center;border-bottom: 0.55px solid gray">
+      <div style="float: right;margin: 10px">
+        <label style="margin-right: 10px"> 总价:￥{{item.shops.allPrise}}</label>
       </div>
+
     </div>
+  </div>
+    <button ion-button block (click)="initJPush()">启动推送</button>
+    <ion-item>
+      <ion-label floating>别名 Alias</ion-label>
+      <ion-input type="text" [(ngModel)]="alias"></ion-input>
+    </ion-item>
+    <button ion-button block (click)="setAlias()" [disabled]="alias == ''">设置别名</button>
+
+    <ion-list>
+      <ion-item text-wrap *ngFor="let msg of msgList">
+        <ion-avatar item-left>
+          <img src="assets/user.jpg">
+        </ion-avatar>
+        <h2>通知</h2>
+        <p>{{msg.content}}</p>
+      </ion-item>
+    </ion-list>
 </ion-content>

@@ -2,13 +2,15 @@ import {Component} from '@angular/core';
 import {NavController, NavParams} from 'ionic-angular';
 import {LookService} from "../../../providers/look-service";
 import {AlertController} from 'ionic-angular';
-
+declare var window;
 @Component({
   selector: 'page-tab-messages-page',
   templateUrl: 'tab-shopcart-page.html',
 })
 export class TabMessagesPage {
   shopcart;
+  alias: string = '';
+  msgList: Array<any> = [];
 
   constructor(public alertCtrl: AlertController, public navCtrl: NavController, public navParams: NavParams, public lookservice: LookService) {
     this.shopcart = [{
@@ -37,7 +39,21 @@ export class TabMessagesPage {
   ionViewDidLoad() {
 
   }
-
+  initJPush() {
+//启动极光推送
+    if (window.plugins && 　window.plugins.jPushPlugin) {
+      window.plugins.jPushPlugin.init();
+      document.addEventListener("jpush.receiveNotification", () => {
+        this.msgList.push({content:window.plugins.jPushPlugin.receiveNotification.alert})
+      }, false);
+    }
+  }
+  setAlias() {
+//设置Alias
+    if (this.alias && this.alias.trim() != '') {
+      window.plugins.jPushPlugin.setAlias(this.alias);
+    }else alert('Alias不能为空')
+  }
   AddRemoveRecipeToFavorite(item, index) {
     console.log(index)
   }

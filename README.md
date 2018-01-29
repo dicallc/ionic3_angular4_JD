@@ -12,6 +12,12 @@
 
 [为什么都是UI，没有什么参考性，我加了一个简单版的购物车](https://github.com/dicallc/ionic3_angular4_JD/wiki/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%83%BD%E6%98%AFUI%EF%BC%8C%E6%B2%A1%E6%9C%89%E4%BB%80%E4%B9%88%E5%8F%82%E8%80%83%E6%80%A7%EF%BC%8C%E6%88%91%E5%8A%A0%E4%BA%86%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%89%88%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6)
 
+
+[ionic快速集成极光推送](https://github.com/dicallc/ionic3_angular4_JD/wiki/ionic%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E6%9E%81%E5%85%89%E6%8E%A8%E9%80%81)
+关于集成极光推送，代码中已经提交，需要去分支拉去代码
+
+代码运行需要依赖极光的插件，才能运行，不懂得可以看上文的教程
+
 ### 使用 ###
 
 

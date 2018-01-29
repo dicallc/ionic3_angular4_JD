@@ -1,42 +1,49 @@
 {
-  "name": "ionic-app-base",
-  "version": "0.0.0",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
-  "private": true,
-  "scripts": {
-    "clean": "ionic-app-scripts clean",
-    "build": "ionic-app-scripts build",
-    "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve"
-  },
-  "dependencies": {
-    "@angular/common": "4.0.2",
-    "@angular/compiler": "4.0.2",
-    "@angular/compiler-cli": "4.0.2",
-    "@angular/core": "4.0.2",
-    "@angular/forms": "4.0.2",
-    "@angular/http": "4.0.2",
-    "@angular/platform-browser": "4.0.2",
-    "@angular/platform-browser-dynamic": "4.0.2",
-    "@ionic-native/core": "3.4.2",
-    "@ionic-native/splash-screen": "3.4.2",
-    "@ionic-native/status-bar": "3.4.2",
-    "@ionic/storage": "2.0.1",
-    "flex.css": "^1.1.6",
-    "ionic-angular": "3.1.1",
-    "ionic2-super-tabs": "^2.5.2",
-    "ionicons": "3.0.0",
-    "jquery": "^3.2.1",
-    "ng-lazyload-image": "^3.1.0",
-    "rxjs": "5.1.1",
-    "sw-toolbox": "3.4.0",
-    "swiper": "^3.4.2",
-    "zone.js": "^0.8.5"
-  },
-  "devDependencies": {
-    "@ionic/app-scripts": "^2.1.3",
-    "ionic": "3.18.0",
-    "typescript": "~2.2.1"
-  }
+    "name": "ionic-app-base",
+    "version": "0.0.0",
+    "author": "Ionic Framework",
+    "homepage": "http://ionicframework.com/",
+    "private": true,
+    "scripts": {
+        "clean": "ionic-app-scripts clean",
+        "build": "ionic-app-scripts build",
+        "ionic:build": "ionic-app-scripts build",
+        "ionic:serve": "ionic-app-scripts serve"
+    },
+    "dependencies": {
+        "@angular/common": "4.0.2",
+        "@angular/compiler": "4.0.2",
+        "@angular/compiler-cli": "4.0.2",
+        "@angular/core": "4.0.2",
+        "@angular/forms": "4.0.2",
+        "@angular/http": "4.0.2",
+        "@angular/platform-browser": "4.0.2",
+        "@angular/platform-browser-dynamic": "4.0.2",
+        "@ionic-native/core": "3.4.2",
+        "@ionic-native/splash-screen": "3.4.2",
+        "@ionic-native/status-bar": "3.4.2",
+        "@ionic/storage": "2.0.1",
+        "flex.css": "^1.1.6",
+        "ionic-angular": "3.1.1",
+        "ionic2-super-tabs": "^2.5.2",
+        "ionicons": "3.0.0",
+        "jquery": "^3.2.1",
+        "ng-lazyload-image": "^3.1.0",
+        "rxjs": "5.1.1",
+        "sw-toolbox": "3.4.0",
+        "swiper": "^3.4.2",
+        "zone.js": "^0.8.5"
+    },
+    "devDependencies": {
+        "@ionic/app-scripts": "^2.1.3",
+        "ionic": "3.18.0",
+        "typescript": "~2.2.1"
+    },
+    "cordova": {
+        "plugins": {
+            "jpush-phonegap-plugin": {
+                "APP_KEY": "a0abcf4671a101330bc5651c"
+            }
+        }
+    }
 }
