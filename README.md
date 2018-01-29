@@ -14,9 +14,14 @@
 
 
 [ionic快速集成极光推送](https://github.com/dicallc/ionic3_angular4_JD/wiki/ionic%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E6%9E%81%E5%85%89%E6%8E%A8%E9%80%81)
-关于集成极光推送，代码中已经提交，需要去分支拉去代码
+关于集成极光推送，代码中已经提交，需要去分支拉取代码
 
-代码运行需要依赖极光的插件，才能运行，不懂得可以看上文的教程
+代码运行需要依赖极光的插件，才能运行
+<pre>
+    cordova plugin add jpush-phonegap-plugin --variable APP_KEY=your_jpush_appkey
+</pre>
+
+不懂得可以看上文的教程
 
 ### 使用 ###
 
