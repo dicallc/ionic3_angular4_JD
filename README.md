@@ -2,11 +2,9 @@
 
 最近在逛淘宝的时候，居然看到有人在卖我的源码，标价十元，已经卖出几份，为买了的人心疼，为了打击二道贩子
 
-##### 现代码所用采用GPL协议开源！！！！！禁止用作商业用途！！ ####
-##### 现代码所用采用GPL协议开源！！！！！禁止用作商业用途！！ ####
-##### 现代码所用采用GPL协议开源！！！！！禁止用作商业用途！！ ####
+##### 现代码所用采用GPL协议开源！！！！！禁止用作商业用途！！
 
-重要的事情说三遍，此项目只能用于学习和交流，有什么问题大家可以提ISSUE，我自己也在在尝试把AG4作为前端主要框架使用，都是菜鸟大家可以多交流,哈哈，没办法我是谷歌粉
+此项目只能用于学习和交流，有什么问题大家可以提ISSUE，我自己也在在尝试把AG4作为前端主要框架使用，都是菜鸟大家可以多交流,哈哈，没办法我是谷歌粉
 ### 关于wiki
 
 关于wiki，我会写一写教程，比如：
@@ -27,76 +25,6 @@
 
 ### [1.如何去使用,以及预览图](https://github.com/dicallc/ionic3_angular4_JD/wiki/%E5%A6%82%E6%9E%9C%E4%BD%BF%E7%94%A8demo)
 ### [2.再次记录从NG1-4一下坑吧 ](https://github.com/dicallc/ionic3_angular4_JD/wiki/%E5%86%8D%E6%AC%A1%E8%AE%B0%E5%BD%95%E4%BB%8ENG1-4%E4%B8%80%E4%B8%8B%E5%9D%91%E5%90%A7)
-
-### 3.更新日志： ###
-
-----------
+### [3.更新日志](https://github.com/dicallc/ionic3_angular4_JD/wiki/3.%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97%EF%BC%9A) ###
 
 
-**5/8/2017 12:24:10 AM**
-
-> 完成登录界面
-<br>
-<br>
-
-**5/9/2017 2:24:55 PM**
-
-完成发现界面
-
-> 顶部导航栏没有发现好的实现方式，目前只是可以滑动，点击后的效果不明显
-
-
-<br>
-<b>5/9/2017 5:25:19 PM  </b>
-
-修改发现界面，模范辣品的分类界面
-
-<br>
-
-
-<img src="https://raw.githubusercontent.com/dicallc/ionic3_angular4_JD/master/gif/20170509172835.png"  alt="上海鲜花港 - 郁金香" />
-
- 
-
-<b>5/10/2017 12:21:58 PM  </b>
-
-1.使用官方组件，cards，toobar，完成购物车界面，高仿京东
-
-小结：总体全部使用ios样式，变化挺大的，估计下一步就考虑适配，和性能问题了，一次编译时间事件挺久的
-
-
-<br>
-<img src="https://raw.githubusercontent.com/dicallc/ionic3_angular4_JD/master/gif/image.png"  alt="上海鲜花港 - 郁金香" />
-
-
-<b>5/11/2017 12:24:00 PM  </b>
-
-1.分模块加载页面，使用--prod，检测代码，优化以后代码
-
-2.优化后的apk可直接秒进入，不需要等待白屏
-
-3.微调我界面的ui
-
-4.添加key 可以直接打prod模式的release
-
-    ionic build android --release --prod
- 
-
-<b>5/15/2017 5:18:38 PM   </b>
-
-1.重新使用ionic的grid布局，解决css样式兼容性问题,意外的发现兼容性存在很大的问题
-
-**如对于flex布局**
-
-
-- android:UC的内核就不兼容
-- ios:9.3系统+
-
-
-[查询css样式兼容情况](http://caniuse.com/#feat=flexbox)
-
-同时找到一个第三方css，可在不同内核实现flex布局
-
-[flex.css](https://github.com/lzxb/flex.css)
-
-待以后尝试一下了
