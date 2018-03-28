@@ -27,4 +27,6 @@
 ### [2.再次记录从NG1-4一下坑吧 ](https://github.com/dicallc/ionic3_angular4_JD/wiki/%E5%86%8D%E6%AC%A1%E8%AE%B0%E5%BD%95%E4%BB%8ENG1-4%E4%B8%80%E4%B8%8B%E5%9D%91%E5%90%A7)
 ### [3.更新日志](https://github.com/dicallc/ionic3_angular4_JD/wiki/3.%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97%EF%BC%9A) ###
 
+### [4.如果想看其他ionic项目点我一下](http://learnserver.duapp.com/technologystack/)
+
 
