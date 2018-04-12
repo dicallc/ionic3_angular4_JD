@@ -15,13 +15,13 @@
 
 <ion-content class="content">
 
-  <ion-input id="user_name" placeholder="用户名/邮箱/已验证手机"style="padding-left: 15px"></ion-input>
+  <ion-input #input_user_name id="user_name" placeholder="用户名/邮箱/已验证手机"style="padding-left: 15px"></ion-input>
   <div class="div_password_conetnt">
     <ion-input id="user_password" placeholder="请输入密码" clearInput type="password"style="padding-left: 15px"></ion-input>
     <ion-toggle [(ngModel)]="pepperoni"style="margin-top: 2px;margin-right: 5px"></ion-toggle>
   </div>
   <div class="div_password_conetnt">
-    <ion-input id="user_password" placeholder="请输入验证码"style="padding-left: 15px"></ion-input>
+    <ion-input id="again_user_password" placeholder="请输入验证码"style="padding-left: 15px"></ion-input>
     <p>|</p>
     <img width="20%" height="43px" src="assets/img/common/verify_code.jpg">
   </div>

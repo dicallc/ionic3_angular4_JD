@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component ,ViewChild} from '@angular/core';
 import {  NavController, NavParams } from 'ionic-angular';
 
 /**
@@ -12,11 +12,14 @@ import {  NavController, NavParams } from 'ionic-angular';
   templateUrl: 'tab-my-page-page.html',
 })
 export class TabMorePagePage {
-
+  @ViewChild('input_user_name') myInput ;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
+    setTimeout(() => {
+      this.myInput.setFocus();
+    },150);
     console.log('ionViewDidLoad TabMorePagePage');
   }
 
