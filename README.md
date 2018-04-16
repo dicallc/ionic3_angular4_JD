@@ -1,4 +1,4 @@
-### 用前须知
+### Ⅰ 用前须知
 
 最近在逛淘宝的时候，居然看到有人在卖我的源码，标价十元，已经卖出几份，为买了的人心疼，为了打击二道贩子
 
@@ -7,7 +7,7 @@
 此项目只能用于学习和交流，有什么问题大家可以提ISSUE，我自己也在在尝试把AG4作为前端主要框架使用，都是菜鸟大家可以多交流,哈哈，没办法我是谷歌粉
 
 
-### 正文
+### Ⅱ正文
 
 #### [1.如何去使用,以及预览图](https://github.com/dicallc/ionic3_angular4_JD/wiki/%E5%A6%82%E6%9E%9C%E4%BD%BF%E7%94%A8demo)
 #### [2.再次记录从NG1-4一下坑吧 ](https://github.com/dicallc/ionic3_angular4_JD/wiki/%E5%86%8D%E6%AC%A1%E8%AE%B0%E5%BD%95%E4%BB%8ENG1-4%E4%B8%80%E4%B8%8B%E5%9D%91%E5%90%A7)
@@ -17,13 +17,13 @@
 
 
 
-### 关于wiki
+
+
+
+
+### Ⅲ 关于wiki
 
 关于wiki，我会写一写教程，比如：
-
-[使用node写了增，查的接口例子](https://github.com/dicallc/study_node_I)
-
-最近有时间用node写了一个小例子，算是用node做后台，实现一下全栈的想法，例子clone下去，可以直接用node写接口，算是一个起手模板，代码注释写的比较详细
 
 [为什么都是UI，没有什么参考性，我加了一个简单版的购物车](https://github.com/dicallc/ionic3_angular4_JD/wiki/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%83%BD%E6%98%AFUI%EF%BC%8C%E6%B2%A1%E6%9C%89%E4%BB%80%E4%B9%88%E5%8F%82%E8%80%83%E6%80%A7%EF%BC%8C%E6%88%91%E5%8A%A0%E4%BA%86%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%89%88%E7%9A%84%E8%B4%AD%E7%89%A9%E8%BD%A6)
 
@@ -38,3 +38,12 @@
 </pre>
 
 不懂得可以看上文的教程
+
+### Ⅳ 关于node.js
+
+[使用node写了增，查的接口例子](https://github.com/dicallc/study_node_I)
+
+既然ionic，可以跨三端，那你还差什么呢，没猜错就是后台，js是能实现后台栈的，比如node.js
+
+最近有时间用node写了一个小例子，算是用node做后台，实现一下全栈的想法，例子clone下去，可以直接用node写接口，算是一个起手模板，代码注释写的比较详细
+
